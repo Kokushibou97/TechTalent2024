@@ -6,6 +6,7 @@
 	</section>
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
+			<item value="org.eclipse.ui.workingSets"/>
 		</list>
 	</section>
 	<section name="SmartImportWizard">
@@ -14,6 +15,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Jess97\Desktop\Github\.metadata\.mylyn\repositories.xml.zip"/>
 			<item value="C:\Users\Jess97\Desktop\Github\TechTalent2024"/>
 		</list>
 	</section>
