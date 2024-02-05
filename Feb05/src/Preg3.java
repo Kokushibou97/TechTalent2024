@@ -22,7 +22,7 @@ public class Preg3 {
 		System.out.println("la suma de los valores X y N es " + (X + N));
 		System.out.println("El coeciente de los valores Y y M es " + (Y / M));
 		System.out.println("El resto de Y y M es " + (Y % M));
-		System.out.println("El doble de los valores es " + 2 * (Y) + 2 * (X) + (N) + 2 * (M));
+		System.out.println("Doble de cada variable = " + (2 * Y) + ", " + (2 * X) + ", " + (2 * N) + ", " + (2 * M));
 		System.out.println("La suma de todas las variables es " + (Y + X + M + N));
 		System.out.println("La suma de todas las variables es " + (Y * X * M * N));
 	}
