@@ -1,5 +1,5 @@
 
-public class Relacion {
+public class PruebaRelacion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,14 +24,14 @@ public class Relacion {
 		        resultado7=operador1<=operador3; //¿10 es mayor o igual que 10? resultado=true
 		        resultado8=operador1>=operador2; //¿10 es mayor o igual que 20? resultado=false
 
-		        System.out.println("¿" +operador1+ " es igual a " +operador2+ "?" +resultado1);
-		        System.out.println("¿" +operador1+ "es igual a 10 " +operador3+ "?" +resultado2);
-		        System.out.println("¿" +operador1+ "es distinto a 20" +operador2+ "?" +resultado3);
-		        System.out.println("¿" +operador1+ "es mayor que 20"  +operador3+ "?" +resultado4);
-		        System.out.println("¿" +operador1+ "es mayor que 10 " +operador2+ "?"+resultado5);
-		        System.out.println("¿" +operador1+ "es mayor que 10 "+operador3+ "?" +resultado6);
-		        System.out.println("¿" +operador1+ "es mayor o igual que 10 " +operador2+ "?" +resultado7);
-		        System.out.println("¿" +operador1+  "es mayor o igual a 20 " +operador3+ "?"+resultado8);
+		        System.out.println("¿10 es igual a 20? " +resultado1);
+		        System.out.println("¿10 es igual a 10? " +resultado2);
+		        System.out.println("¿10 es distinto a 20? " +resultado3);
+		        System.out.println("¿10 es mayor que 20? " +resultado4);
+		        System.out.println("¿10 es mayor que 10? " +resultado5);
+		        System.out.println("¿20 es mayor que 10? " +resultado6);
+		        System.out.println("¿10 es mayor o igual que 10? " +resultado7);
+		        System.out.println("¿10 es mayor o igual a 20? " +resultado8);
 
 	}
 
