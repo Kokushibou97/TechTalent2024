@@ -6,10 +6,8 @@ public class D05 {
 int operador= 10;
 System.out.println(operador);
 System.out.println(operador++);
-System.out.print(++operador);
-System.out.println(operador --);
+System.out.println(++operador);
 System.out.println(--operador);
-
+System.out.println(operador--);
 	}
-
 }
