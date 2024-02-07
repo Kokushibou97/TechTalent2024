@@ -1,0 +1,241 @@
+U5:
+Preg2:
+String nombre = "Jessica";
+System.out.println(" Bienvenid@ "+nombre+" :D ");
+
+será que lo quieren en box?
+
+-----------------------------------------------------------------------
+Pregunta3:
+import javax.swing.JOptionPane;
+
+public class Main {
+    public static void main(String[] args) {
+        // Solicitar al usuario que introduzca su nombre
+        String miNombre = JOptionPane.showInputDialog(null, "Por favor, introduce tu nombre:");
+        
+        // Establecer un valor predeterminado si no se ingresa un nombre
+        if (miNombre == null || miNombre.isEmpty()) {
+            miNombre = "invitado";
+        }
+        
+        // Mensaje de bienvenida
+        String mensajeBienvenida = "¡Bienvenido, " + miNombre + "!";
+        
+        // Imprimir el mensaje de bienvenida en un "box" de chat
+        imprimirMensajeEnChatBox(mensajeBienvenida);
+    }
+    
+    // Método para imprimir un mensaje en un "box" de chat
+    public static void imprimirMensajeEnChatBox(String mensaje) {
+        int longitudMensaje = mensaje.length();
+        
+        // Imprimir el "box" de chat
+        System.out.println("╔" + "═".repeat(longitudMensaje + 2) + "╗");
+        System.out.println("║ " + mensaje + " ║");
+        System.out.println("╚" + "═".repeat(longitudMensaje + 2) + "╝");
+    }
+}
+
+
+--------------------------------------------------------------------------------------
+pregunta 4:
+import javax.swing.JOptionPane;
+
+public class Main {
+    public static void main(String[] args) {
+        // Solicitar al usuario que ingrese el radio del círculo
+        String inputRadio = JOptionPane.showInputDialog(null, "Por favor, introduce el radio del círculo:");
+        
+        // Convertir la entrada del usuario a double usando Double.parseDouble
+        double radio = Double.parseDouble(inputRadio);
+        
+        // Calcular el área del círculo usando la fórmula A = π * r^2
+        double area = Math.PI * Math.pow(radio, 2);
+        
+        // Mostrar el resultado al usuario
+        JOptionPane.showMessageDialog(null, "El área del círculo con radio " + radio + " es: " + area);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------
+
+pregunta 5
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitar al usuario que ingrese un número
+        System.out.print("Por favor, introduce un número entero: ");
+        int numero = scanner.nextInt();
+        
+        // Verificar si el número es divisible entre 2
+        if (numero % 2 == 0) {
+            System.out.println("El número " + numero + " es divisible entre 2.");
+        } else {
+            System.out.println("El número " + numero + " no es divisible entre 2.");
+        }
+        
+        // Cerrar el objeto Scanner
+        scanner.close();
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------
+
+pregunta 6:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Definir la constante para el porcentaje de IVA
+        final double IVA_PORCENTAJE = 0.21;
+        
+        // Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitar al usuario que ingrese el precio del producto
+        System.out.print("Por favor, introduce el precio del producto: ");
+        double precioProducto = scanner.nextDouble();
+        
+        // Calcular el precio final con IVA incluido
+        double precioFinal = precioProducto * (1 + IVA_PORCENTAJE);
+        
+        // Mostrar el precio final al usuario
+        System.out.println("El precio final del producto con IVA incluido es: " + precioFinal);
+        
+        // Cerrar el objeto Scanner
+        scanner.close();
+    }
+}
+
+
+--------------------------------------------------------
+pregunta 7:
+public class Main {
+    public static void main(String[] args) {
+        // Inicializar el contador
+        int contador = 1;
+        
+        // Mostrar los números del 1 al 100 con un bucle while
+        while (contador <= 100) {
+            System.out.println(contador);
+            contador++;
+        }
+    }
+}
+
+----------------------------------------------------------------
+pregunta 8:
+public class Main {
+    public static void main(String[] args) {
+        // Mostrar los números del 1 al 100 con un bucle for
+        for (int contador = 1; contador <= 100; contador++) {
+            System.out.println(contador);
+        }
+    }
+}
+
+------------------------------------------------------------------
+pregunta 9:
+public class Main {
+    public static void main(String[] args) {
+        // Utilizando un bucle while para mostrar los números del 1 al 100 divisibles entre 2 y 3
+        int contador = 1;
+        while (contador <= 100) {
+            if (contador % 2 == 0 && contador % 3 == 0) {
+                System.out.println(contador);
+            }
+            contador++;
+        }
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        // Utilizando un bucle for para mostrar los números del 1 al 100 divisibles entre 2 y 3
+        for (int contador = 1; contador <= 100; contador++) {
+            if (contador % 2 == 0 && contador % 3 == 0) {
+                System.out.println(contador);
+            }
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------------
+pregunta 10: 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitar al usuario el número de ventas a introducir
+        System.out.print("Por favor, introduce el número de ventas a registrar: ");
+        int numeroVentas = scanner.nextInt();
+        
+        // Variable para almacenar la suma de las ventas
+        double sumaVentas = 0;
+        
+        // Solicitar al usuario ingresar las ventas
+        for (int i = 1; i <= numeroVentas; i++) {
+            System.out.print("Venta " + i + ": ");
+            double venta = scanner.nextDouble();
+            sumaVentas += venta;
+        }
+        
+        // Mostrar la suma de todas las ventas
+        System.out.println("La suma de todas las ventas es: " + sumaVentas);
+        
+        // Cerrar el objeto Scanner
+        scanner.close();
+    }
+}
+
+--------------------------------------------------------------------
+pregunta 11:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitar al usuario que ingrese un día de la semana
+        System.out.print("Por favor, introduce un día de la semana (1-7): ");
+        int diaSemana = scanner.nextInt();
+        
+        // Determinar si el día ingresado es laboral o no usando un switch
+        String mensaje;
+        switch (diaSemana) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                mensaje = "Es un día laboral.";
+                break;
+            case 6:
+            case 7:
+                mensaje = "No es un día laboral.";
+                break;
+            default:
+                mensaje = "Día de la semana inválido.";
+        }
+        
+        // Mostrar el resultado al usuario
+        System.out.println(mensaje);
+        
+        // Cerrar el objeto Scanner
+        scanner.close();
+    }
+}
+
+---------------------------------------------------------------------------------------
