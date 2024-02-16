@@ -1,0 +1,92 @@
+import javax.swing.JOptionPane;
+
+public class EjerExtra5 {
+    public static void main(String[] args) {
+        String frase = JOptionPane.showInputDialog(null, "Ingresa un palindromo:");
+        String pali = frase.toLowerCase();
+        String pala = pali.replaceAll("\s+", "");
+        char[] car = pala.toCharArray();
+        int longitud = pala.length();
+        int limite = (longitud / 2);
+        int ult = (longitud - 1);
+        int prin = 0;
+        boolean noespoli = false;
+
+        if (longitud % 2 == 0) {
+            for (prin = 0; ((prin < limite) && (ult >= limite)); prin++, ult--) {
+                if (car[prin] != car[ult]) {
+                    noespoli = true;
+                } else {
+                }
+            }
+            if (noespoli == true) {
+                JOptionPane.showMessageDialog(null, "La frase <" + frase + "> no es un palíndromo.");
+            } else {
+                JOptionPane.showMessageDialog(null, "La frase <" + frase + "> es un palíndromo.");
+            }
+        } else {
+            for (prin = 0; ((prin < limite) && (ult > limite)); prin++, ult--) {
+                if (car[prin] != car[ult]) {
+                    noespoli = true;
+                } else {
+                }
+            }
+            if (noespoli == true) {
+                JOptionPane.showMessageDialog(null, "La frase <" + frase + "> no es un palíndromo.");
+            } else {
+                JOptionPane.showMessageDialog(null, "La frase <" + frase + "> es un palíndromo.");
+            }
+        }
+    }
+}
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+PALINDROMO STRING BUILDER:
+public static void main(String[] args) {
+    /* Dada una variable String por System.in determinar si es o no palindromo/
+
+    Scanner sc = new Scanner(System.in); 
+
+    System.out.println(" -- ¿SERA PALINDROMO? --");
+    System.out.println("Por favor, introduce la palabra deseada:");
+
+    String word = sc.nextLine();
+    sc.close();
+
+    word = word.toUpperCase();
+
+    System.out.println("La palabra INVERTIDA es: "+crearInverso(word)+ ".\n");
+
+    revisaPalindromo(word, crearInverso(word));
+
+    }
+
+    public static String crearInverso (String palabraEscogida) {
+
+    int lengthIndice = palabraEscogida.length();
+    System.out.println("La palabra " +palabraEscogida+ " tiene " +lengthIndice+ "letras.");
+
+    StringBuilder palabraReves = new StringBuilder(); /Comando para GENERAR STRING/
+
+    System.out.println("\nVamos a invertir, una a una, las letras de la palabra empezando por el final:");
+
+    for (lengthIndice = lengthIndice -1 ; lengthIndice >= 0; lengthIndice-- ) {
+        palabraReves.append(palabraEscogida.charAt(lengthIndice)); 
+        System.out.println(palabraReves);
+    }
+
+    return palabraReves.toString();
+    }
+    / El metodo void no devuelve nada (no tiene return)
+     
+pero genera acciones con parametros que nosotros podemos introducir.*/
+  public static void revisaPalindromo(String palabraEscogida, String nuevaPalabra) { 
+      if(palabraEscogida.equals(nuevaPalabra)) {
+          System.out.println("La palabra " +palabraEscogida+ " ES un palindromo.");}else {
+          System.out.println("La palabra " +palabraEscogida+ " NO ES un palindromo.");}}
+
+
+----------------------------------------------------------------------------------------------------------------------
