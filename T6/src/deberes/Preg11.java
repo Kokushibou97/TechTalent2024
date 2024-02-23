@@ -23,7 +23,7 @@ public class Preg11 {
 	public static void llenarArray(int[] array) {
 		Scanner sc = new Scanner(System.in);
 		for (int i = 0; i < array.length; i++) {
-			System.out.println("Introduce el valor para la posición " + i + ":");
+			System.out.println("Introduce valor " + i + ":");
 			array[i] = sc.nextInt();
 		}
 	}
