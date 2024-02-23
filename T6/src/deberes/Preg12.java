@@ -7,26 +7,28 @@ public class Preg12 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Introduce el tamaño del array:");
-		int tamaño = sc.nextInt();
-
-		int[] array1 = new int[tamaño];
+		System.out.println("introduce numero ");
+		int tamany = sc.nextInt();
+		int[] array1 = new int[tamany];
 
 		llenarArray(array1, 1, 300);
-
-		System.out.println("Introduce el dígito final que deseas buscar:");
+//		mostrarArray(array1);		
+		System.out.println("introduce un digito ");
 		int digito = sc.nextInt();
 
 		while (digito < 0 || digito > 9) {
-			System.out.println("Por favor, introduce un dígito válido (0-9):");
+			System.out.println(" numero invalido, debe de ser un digito ");
 			digito = sc.nextInt();
 		}
 
-		int[] numerosConDigito = obtenerNumerosConDigito(array1, digito);
+		int[] conDigito = conDigito(array1, digito);
 
-		System.out.println("Números en el array que terminan en " + digito + ":");
-		mostrarArray(numerosConDigito);
+		System.out.println("" + digito);
+		mostrarArray(conDigito(array1, digito));
+	}
+
+	private static int[] obtenernumeros(int[] array1, int digito) {
+		return null;
 	}
 
 	public static void llenarArray(int[] array, int min, int max) {
@@ -38,12 +40,12 @@ public class Preg12 {
 
 	public static void mostrarArray(int[] array) {
 		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i] + " ");
+			System.out.print(array[i]+" ");
 		}
 		System.out.println();
 	}
 
-	public static int[] obtenerNumerosConDigito(int[] array, int digito) {
+	public static int[]  conDigito(int[] array, int digito) {
 		int contador = 0;
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] % 10 == digito) {
@@ -51,16 +53,16 @@ public class Preg12 {
 			}
 		}
 
-		int[] numerosConDigito = new int[contador];
+		int[]  conDigito = new int[contador];
 		contador = 0;
 
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] % 10 == digito) {
-				numerosConDigito[contador] = array[i];
+				 conDigito[contador] = array[i];
 				contador++;
 			}
 		}
 
-		return numerosConDigito;
+		return  conDigito;
 	}
 }
