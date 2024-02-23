@@ -1,2 +1,2 @@
 # TechTalent2024
-fullstack bootcamp
+fullstack bootcamp Java/Angular based
