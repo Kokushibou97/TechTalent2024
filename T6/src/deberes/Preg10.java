@@ -26,7 +26,7 @@ public class Preg10 {
 
 		int contador = 0;
 		while (contador < tamaño) {
-			int num = rand.nextInt(1000) + 1; // Generar números aleatorios entre 1 y 1000
+			int num = rand.nextInt(1000) + 1; 
 			if (esPrimo(num)) {
 				array[contador] = num;
 				contador++;
