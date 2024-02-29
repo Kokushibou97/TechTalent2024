@@ -1,7 +1,7 @@
 package deberes;
 import java.util.Scanner;
 public class Preg3 {
-public static boolean Primo(int num) {
+public static boolean primo(int num) {
 	if (num <=1) {
 		return false;
 	}
@@ -17,11 +17,10 @@ Scanner sc= new Scanner(System.in);
 System.out.println("Introduce un numero ");
 int numero = sc.nextInt();
 sc.close();
-if (Primo(numero)) {
+if (primo(numero)) {
 	System.out.println(numero+" correcto, es un num primo ");
 }else {
 	System.out.println(numero+" nope, no es primo ");
 	}
-
 }
 }

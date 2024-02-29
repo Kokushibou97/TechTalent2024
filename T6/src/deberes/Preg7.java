@@ -8,6 +8,7 @@ public class Preg7 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println(" pon cuantos euros  ");
 		double euros = sc.nextDouble();
+		
 		System.out.println("Pone la divisia a la que desea cambiar ");
 		String divisa = sc.next();
 		CambioDivisa(euros, divisa);

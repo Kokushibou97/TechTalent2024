@@ -27,9 +27,7 @@ public class Preg12 {
 		mostrarArray(conDigito(array1, digito));
 	}
 
-	private static int[] obtenernumeros(int[] array1, int digito) {
-		return null;
-	}
+	
 
 	public static void llenarArray(int[] array, int min, int max) {
 		Random rand = new Random();

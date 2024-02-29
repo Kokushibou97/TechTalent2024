@@ -5,7 +5,7 @@ public class Pr5 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduzca un número decimal para convertirlo a binario:");
+        System.out.println(" Pon un número decimal para convertirlo en binario:");
         int numDeci = sc.nextInt();
         String binario = ABinario(numDeci);
         System.out.println("El número binario es: " + binario);

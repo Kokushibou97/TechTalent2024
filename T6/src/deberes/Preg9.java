@@ -7,16 +7,18 @@ public class Preg9 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println();
-		int tamaño = 0;
+		System.out.println(" registra el tamaño del array ");
+		int tamaño = sc.nextInt();
 		int[] array = new int[tamaño];
-		int tamaño1 = sc.nextInt();
+		llenarArray(array, 0, 300);
+		mostrarArray(array);
+		sc.close();
 	}
 
 	public static void llenarArray(int[] array, int min, int maxi) {
 		Random rand = new Random();
 		for (int i = 0; i < array.length; i++) {
-			array[i] = rand.nextInt(maxi - min);
+			array[i] = rand.nextInt(maxi - min+1)+min;
 		}
 	}
 
