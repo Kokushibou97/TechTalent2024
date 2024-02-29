@@ -1,5 +1,5 @@
 package deberes;
-
+import java.util.random.*;
 import java.util.Scanner;
 import java.util.Arrays;
 
