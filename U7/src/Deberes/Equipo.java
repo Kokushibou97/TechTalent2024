@@ -39,10 +39,36 @@ class Alumno {
     }
 }
 
+//public class Equipo {
+//
+//    public static void main(String[] args) {
+//        // Crear una lista de 2 alumnos
+//        List<Alumno> alumnos = new ArrayList<>();
+//        alumnos.add(new Alumno("Abde", "Rachedi", 22));
+//        alumnos.add(new Alumno("Jessi", "Najem", 26));
+//        alumnos.add(new Alumno("Joel", "", 17));
+//        alumnos.add(new Alumno("Sebas", "", 29));
+//        alumnos.add(new Alumno("Santos", "", 24));
+//        alumnos.add(new Alumno("Manel", "", 23));
+//        alumnos.add(new Alumno("Diego", "", 22));
+//        alumnos.add(new Alumno("Alejandro", "", 25));
+//        alumnos.add(new Alumno("Jose", "", 28));
+//        alumnos.add(new Alumno("Alex", "", 30));
+//        alumnos.add(new Alumno("Aurora", "Sanchez", 30));
+//        alumnos.add(new Alumno("Laia","", 23));
+//        alumnos.add(new Alumno("Ana maria","", 29));
+//        alumnos.add(new Alumno("Toni","", 20));
+//
+//        
+//        System.out.println("Orden");
+//        for (Alumno alumno : alumnos) {
+//            System.out.println(alumno);
+//    }
+//}}
+
 public class Equipo {
 
     public static void main(String[] args) {
-        // Crear una lista de 2 alumnos
         List<Alumno> alumnos = new ArrayList<>();
         alumnos.add(new Alumno("Abde", "Rachedi", 22));
         alumnos.add(new Alumno("Jessi", "Najem", 26));
@@ -55,13 +81,18 @@ public class Equipo {
         alumnos.add(new Alumno("Jose", "", 28));
         alumnos.add(new Alumno("Alex", "", 30));
         alumnos.add(new Alumno("Aurora", "Sanchez", 30));
-        alumnos.add(new Alumno("Laia","", 23));
-        alumnos.add(new Alumno("Ana maria","", 29));
-        alumnos.add(new Alumno("Toni","", 20));
+        alumnos.add(new Alumno("Laia", "", 23));
+        alumnos.add(new Alumno("Ana maria", "", 29));
+        alumnos.add(new Alumno("Toni", "", 20));
 
-        
-        System.out.println("Orden");
-        for (Alumno alumno : alumnos) {
+        // Sorting the list by student names
+        List<Alumno> sortedAlumnos = alumnos.stream()
+                .sorted(Comparator.comparing(Alumno::getNombre))
+                .collect(Collectors.toList());
+
+        System.out.println("Ordenado por nombre:");
+        for (Alumno alumno : sortedAlumnos) {
             System.out.println(alumno);
+        }
     }
-}}
+}
