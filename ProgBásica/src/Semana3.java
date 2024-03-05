@@ -40,8 +40,19 @@ public class Semana3 {
 		double profunPi2 = sc.nextDouble();
 		System.out.println("La profundidad de la 2nda pi es " + profunPi2);
 		int areaPi2 = (int) (Largo * ampPi2);
-		System.out.println("La area de la 2nda pi es" + areaPi2);
+		System.out.println("La area de la 2nda pi es " + areaPi2);
 		int volPi2 = (int) (Largo * ampPi2 * profunPi2);
-		System.out.println("La area de la 2nda pi es" + volPi2);
+		System.out.println("La el volumen de la 2nda pi es " + volPi2);
+
+		// valores intercambiados usando la regla de 3//
+		double aux = profunPi1;
+		profunPi1 = profunPi2;
+		profunPi2 = aux;
+		System.out.println("Intercambio de valores entre pi1 y pi2");
+		
+		int volPi1Cambiado=(int)(Largo * ampPi2 * profunPi2);
+		System.out.println("El nuevo volumen de la pi1 es "+volPi1Cambiado);
+		int volPi2Cambiado=(int)(Largo * ampPi2 * profunPi2);
+		System.out.println("El nuevo volumen de la pi2 es "+volPi2Cambiado);
 	}
 }
