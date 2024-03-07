@@ -4,7 +4,13 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 class Producto {
-    int id;
+    public Producto(String nombre2, double precio2) {
+
+	}
+	public Producto() {
+		// TODO Auto-generated constructor stub
+	}
+	int id;
     String nombre;
     double precio;
     int stock;
