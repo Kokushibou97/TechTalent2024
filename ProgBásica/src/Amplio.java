@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class NajJs3 {
+public class Amplio {
 
     // Constantes para las puntuaciones
     private static final int PUNTOS_HERMANOS = 40;
