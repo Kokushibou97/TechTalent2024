@@ -31,20 +31,20 @@ public class NajemjS3 {
 			String mismoPobStr = JOptionPane.showInputDialog(null,
 					"¿Vive en la misma población del insti? (0: no / 1: sí)", "Inscripción",
 					JOptionPane.QUESTION_MESSAGE);
-			int mismoPob = Integer.parseInt(mismoPobStr);
+			int trabMismoPob = Integer.parseInt(mismoPobStr);
 
 			// Si, sí pues asiganmos puntos//
-			if (mismoPob == 1) {
+			if (trabMismoPob == 1) {
 				puntos += 30;
 			} else {
 				// Trabjan los padres en el pueblo?//
 				String trabajaMismaPoblacionStr = JOptionPane.showInputDialog(null,
 						"¿El padre o la madre trabaja en la misma población del insti? (0: no / 1: sí)",
 						"Inscripción", JOptionPane.QUESTION_MESSAGE);
-				int trabMismoPob = Integer.parseInt(mismoPobStr);
+				int trabMismoPob1 = Integer.parseInt(mismoPobStr);
 
 				// En el caso de si, asignamos puntos//
-				if (trabMismoPob == 1) {
+				if (trabMismoPob1 == 1) {
 					puntos += 20;
 				}
 			}
