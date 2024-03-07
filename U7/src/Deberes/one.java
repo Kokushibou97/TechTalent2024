@@ -22,18 +22,20 @@ public class one {
             double notaMedia = Double.parseDouble(sc.nextLine());
             notAlum.put(name, notaMedia);
         }
-
+//inecializamos el bucle. cuyo valor es igual a 0 para guardar la información//
         double sumaNotas = 0;
+        //aquí hacemos el calculo//
         for (double nota : notAlum.values()) {
             sumaNotas += nota;
         }
+        //aqui calculamos la nota media de la suma de todas las notas//
         double notaMediaGlobal = sumaNotas / notAlum.size();
 
-        System.out.println("\nEstadísticas generales:");
-        System.out.println("Cantidad de alumnos: " + notAlum.size());
-        System.out.println("Nota media general: " + notaMediaGlobal);
+        System.out.println("\nEstadísticas generales");
+        System.out.println("Cantidad de alumnos " + notAlum.size());
+        System.out.println("Nota media general " + notaMediaGlobal);
 
-        System.out.println("\nNotas individuales de los alumnos:");
+        System.out.println("\nNotas individuales de los alumnos");
         for (String alumno : notAlum.keySet()) {
             System.out.println(alumno + ": " + notAlum.get(alumno));
         }
