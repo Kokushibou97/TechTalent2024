@@ -1,11 +1,8 @@
 //Nos piden crear un programa que le pida al usuario cierta información//
 //Plantear preguntas sencillas que se contestan con si o no//
 //Si o no condiciona a dar un resultado al final//
-
 import javax.swing.JOptionPane;
-
 public class NajemjS3 {
-
 	public static void main(String[] args) {
 		// Primero tenemos que pedir el nº de registro//
 		// Se ha usado la caja de dialogo para que le usuario introduzca la
@@ -18,7 +15,6 @@ public class NajemjS3 {
 		String hermanoStr = JOptionPane.showInputDialog(null, "¿Tiene algún hermano en el centro? (0: no / 1: sí)",
 				"Inscripción", JOptionPane.QUESTION_MESSAGE);
 		int tieneHerm = Integer.parseInt(hermanoStr);
-
 		int puntos = 0;
 
 		// el bucle, en el caso de si pues asignamos puntos//
