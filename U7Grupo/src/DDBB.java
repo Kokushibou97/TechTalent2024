@@ -27,7 +27,7 @@ public class DDBB {
             System.out.println("2. Consultar precio de un artículo");
             System.out.println("3. Listar todos los artículos");
             System.out.println("4. Salir");
-            System.out.print("Elige una opción: ");
+            System.out.print("Elige una opción de la anteriores: ");
             int opcion = sc.nextInt();
 
             switch (opcion) {
