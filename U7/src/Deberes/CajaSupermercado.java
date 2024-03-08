@@ -69,9 +69,10 @@ class Cliente {
 	public double getCambio(double precioTotal) {
 		return cantidadPagada - precioTotal;
 	}
+
 //creado por error en el main//
 	public String getCantidadPagada() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 }
