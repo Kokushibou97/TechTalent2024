@@ -62,9 +62,8 @@ Map<String, Double> PrecioProducto = new HashMap<>();
 				System.out.print("El pago del cliente sera ");
 				double pagoCliente =  sc.nextDouble();			
 //				
-//Aquí se iforma de la diferencia entre la factura y el lo que paga el cliente (devolución)//
 				double cambioCliente = pagoCliente - totalCompra;
 				System.out.println("El cliente pago " + pagoCliente + " y el cambio sera de " + cambioCliente);
-			
+				//Aquí se iforma de la diferencia entre la factura y el lo que paga el cliente (devolución)//
 			}
 }
