@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Iterator;
+import java.util.Iterator;//se importa la iterfaz para recorrer el hashmap//
 
 
 public class ejercicio2UN7 {
@@ -45,21 +45,21 @@ Map<String, Double> PrecioProducto = new HashMap<>();
         }
             PrecioProducto.put(nombreProducto, precioProductoNeto);
 		}
-		double sumaCompra = 0;
+		double sumaCompra = 0;//Después de todo lo anterior se calcula el precio total//
     	for (double m : PrecioProducto.values()) {
 			sumaCompra += m;
 		}
-
+    	//mostreo del total//
 		double totalCompra = sumaCompra;
 
 			
 			System.out.println( "El precio total de la compra sera de: "+ totalCompra);
-			
+			//Aquí se pide el pago al cliente//
 			System.out.print("El pago del cliente sera ");
 			double pagoCliente =  scanner.nextDouble();
 //			
 			double cambioCliente = pagoCliente - totalCompra;
 			System.out.println("El cliente pago " + pagoCliente + " y el cambio sera de " + cambioCliente);
-		
+			//Aquí se iforma de la diferencia entre la factura y el lo que paga el cliente (devolución)//
 		}
 }
