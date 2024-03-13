@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class BaseDatos {
     public static void main(String[] args) {
-        // Crear un diccionario para almacenar los artículos y sus precios
+        
         Map<String, Double> stockDatabase = new HashMap<>();
 
-        // Agregar 10 artículos iniciales (puedes modificarlos según tus necesidades)
+        
         stockDatabase.put("Camiseta", 19.99);
         stockDatabase.put("Pantalones", 39.99);
         stockDatabase.put("Zapatos", 59.99);
@@ -21,7 +21,7 @@ public class BaseDatos {
         stockDatabase.put("Bolso", 34.99);
         stockDatabase.put("Reloj", 99.99);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         while (true) {
             System.out.println("\n--- Control de Stock ---");
@@ -30,20 +30,20 @@ public class BaseDatos {
             System.out.println("3. Listar todos los artículos");
             System.out.println("4. Salir");
             System.out.print("Elige una opción: ");
-            int opcion = scanner.nextInt();
+            int opcion = sc.nextInt();
 
             switch (opcion) {
                 case 1:
                     System.out.print("Introduce el nombre del artículo: ");
-                    String articulo = scanner.next();
+                    String articulo = sc.next();
                     System.out.print("Introduce el precio del artículo: ");
-                    double precio = scanner.nextDouble();
+                    double precio = sc.nextDouble();
                     stockDatabase.put(articulo, precio);
                     System.out.println("Artículo añadido correctamente.");
                     break;
                 case 2:
                     System.out.print("Introduce el nombre del artículo a consultar: ");
-                    String articuloConsultar = scanner.next();
+                    String articuloConsultar = sc.next();
                     if (stockDatabase.containsKey(articuloConsultar)) {
                         System.out.println("Precio de " + articuloConsultar + ": $" + stockDatabase.get(articuloConsultar));
                     } else {
