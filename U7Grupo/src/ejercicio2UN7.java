@@ -51,7 +51,6 @@ Map<String, Double> PrecioProducto = new HashMap<>();
 		}
     	//mostreo del total//
 		double totalCompra = sumaCompra;
-	
 			System.out.println( "El precio total de la compra sera de: "+ totalCompra);
 			//Aquí se pide el pago al cliente//
 			System.out.print("El pago del cliente sera ");
