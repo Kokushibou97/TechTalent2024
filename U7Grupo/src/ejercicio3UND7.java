@@ -31,7 +31,7 @@ public class ejercicio3UND7 {
 		// Si el usuario ingresa "si", se imprime el stock de productos. Si no, se
 		// muestra un mensaje indicando que el usuario debe agregar productos
 		// manualmente//
-		if (articulosDisponibles.equals("si")) {
+		if (articulosDisponibles.equals("si")) {//nos falta tener esto dentro de un bucle que vaya preguntado//
 			System.out.println(stockProducto);
 
 		} else {
@@ -46,7 +46,7 @@ public class ejercicio3UND7 {
 		for (int i = 1; i <= cantidadProductos; i++) {
 			System.out.println("\nEscriba el nombre del articulo: ");
 			String nombreProducto = scanner.next();
-
+//esto se puede hacer con while true//
 			System.out.println("\nEscriba la cantidad del articulo que desea añadir: ");
 			int cantidadArticulos = scanner.nextInt();
 			// Se solicita al usuario que ingrese la cantidad del producto que desea
