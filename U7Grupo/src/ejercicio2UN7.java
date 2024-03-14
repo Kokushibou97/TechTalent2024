@@ -32,7 +32,7 @@ Map<String, Double> PrecioProducto = new HashMap<>();
 		necesidadIVA = necesidadIVA.toLowerCase();
 
 		double precioProductoNeto;
-//Luego se crea un bucle para asignar un tipo de IVA, según respuesta si/no//
+//Luego se crea un condicional para asignar un tipo de IVA, según respuesta si/no//
 		if ( necesidadIVA.equals("si")) {
 			precioProductoNeto = (precioProductoBruto*0.04)+precioProductoBruto;
             System.out.println("el IVA sera del 4%: "  + precioProductoBruto*0.04 +
@@ -47,11 +47,11 @@ Map<String, Double> PrecioProducto = new HashMap<>();
 		}
 		double sumaCompra = 0;//Después de todo lo anterior se calcula el precio total//
     	for (double m : PrecioProducto.values()) {
-			sumaCompra += m;
+			sumaCompra += m;//guardará el valor de los values//
 		}
     	//mostreo del total//
 		double totalCompra = sumaCompra;
-
+//se puede mejorar con los métodos//
 			
 			System.out.println( "El precio total de la compra sera de: "+ totalCompra);
 			//Aquí se pide el pago al cliente//
@@ -60,6 +60,6 @@ Map<String, Double> PrecioProducto = new HashMap<>();
 //			
 			double cambioCliente = pagoCliente - totalCompra;
 			System.out.println("El cliente pago " + pagoCliente + " y el cambio sera de " + cambioCliente);
-			//Aquí se iforma de la diferencia entre la factura y el lo que paga el cliente (devolución)//
+			//Aquí se informa de la diferencia entre la factura y el lo que paga el cliente (devolución)//
 		}
 }
