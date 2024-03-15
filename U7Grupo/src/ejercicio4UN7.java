@@ -12,10 +12,10 @@ public class ejercicio4UN7 {
 		// to put a value inside the hashmap//
 		stockProducto.put("Patano", 2.99);
 
-		stockProducto.put("po ", 5.2);
+		stockProducto.put("tomate ", 5.2);
 		stockProducto.put("pato ", 2.0);
-		stockProducto.put("pata ", 9.0);
-		stockProducto.put("pelel ", 99.8);
+		stockProducto.put("patata ", 9.0);
+		stockProducto.put("carne ", 99.8);
 		stockProducto.put("zatano ", 39.0);
 		stockProducto.put("aranadno ", 2.0);
 		stockProducto.put("pera", 7.8);
