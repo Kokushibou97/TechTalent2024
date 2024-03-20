@@ -76,7 +76,7 @@ public class Three {
         System.out.println("Consumo energético: " + electrodomestico2.getConsumoEnergetico());
         System.out.println("Peso: " + electrodomestico2.getPeso());
 
-        Three electrodomestico3 = new Three(300, 15, "negro", 'A');
+        Three electrodomestico3 = new Three(300, 15);
         System.out.println("\nElectrodomestico 3:");
         System.out.println("Precio base: " + electrodomestico3.getPrecioBase());
         System.out.println("Color: " + electrodomestico3.getColor());
