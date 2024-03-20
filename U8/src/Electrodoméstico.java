@@ -1,4 +1,4 @@
-public class Three {
+public class  Electrodoméstico {
 
     private final double precioBase;
     private final String color;

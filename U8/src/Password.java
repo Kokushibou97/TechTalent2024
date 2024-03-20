@@ -19,10 +19,10 @@ public class Password {
 
 	// El segundo constructor se usa para la longitud del password//
 	public Password(int longitud) {
-        if (longitud <= 0) {
+        if (longitud <= 0) {//este condicional verifica la longitud que sea superior a 0//
             throw new IllegalArgumentException("La longitud debe ser un número entero y superior a 0");
         }
-        this.longitud = longitud;
+        this.longitud = longitud;//el this asigna el valor del párametro longitud al campo longitud//
         generPasswordAlea();
     }
 
