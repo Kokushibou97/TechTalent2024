@@ -60,3 +60,30 @@ public class Electrodoméstico {
 				+ electrodomestico3.peso);
 	}
 }
+
+//  public double calcularPrecioFinal() {
+//double precioFinal = precioBase;
+//switch (consumo) {
+   //// case 'A':
+        //precioFinal += 100;
+       // break;
+  //  case 'B':
+     //   precioFinal += 80;
+      //  break;
+   // /case 'C':
+      //  precioFinal += 60;
+  //      break;
+   // case 'D':
+    //    precioFinal += 40;
+    //    break;
+    //case 'E':
+     //   precioFinal += 20;
+     //   break;
+//}
+//if (peso >= 30) {
+  //  precioFinal += 50;
+//} else if (peso >= 20) {
+    //precioFinal += 30;
+//} else if (peso >= 10) {
+   // precioFinal += 10;
+//}//
