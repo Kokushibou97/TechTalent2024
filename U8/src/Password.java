@@ -1,6 +1,6 @@
 import java.security.SecureRandom; // Esta clase utiliza un algoritmo más seguro para generar aleatorios//
 
-// Primero se crea la clase llamada Password//
+// Primero se crea el objeto Password//
 public class Password {
 	private int longitud; // Se definen las variables en privado//
 	private String password;

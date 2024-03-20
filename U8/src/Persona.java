@@ -1,4 +1,4 @@
-//primero se crea la clase publica//
+//primero se crea el objeto publico//
 public class Persona {
 	private String nombre;// después se definen con las variables privadas para la clase Uno//
 	private int edad;// Estos variables representan los atributos de la persona//

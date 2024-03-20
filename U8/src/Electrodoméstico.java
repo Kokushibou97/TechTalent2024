@@ -1,86 +1,66 @@
-public class  Electrodoméstico {
+import java.util.Arrays;
+//creación del objeto//
+public class Electrodoméstico {
+    // Constantes para los valores por defecto//
+    private static final String DEFAULT_COLOR = "blanco";
+    private static final String DEFAULT_CONSUMO = "F";
+    private static final double DEFAULT_PRECIO_BASE = 100;
+    private static final double DEFAULT_PESO = 5;
 
-    private final double precioBase;
-    private final String color;
-    private final ConsumoEnergetico consumoEnergetico;
-    private final double peso;
+    // Colores disponibles
+    private static final String[] AVAILABLE_COLORES = {"blanco", "negro", "rojo", "azul", "gris"};
 
-    public static final double PRECIO_BASE_DEFECTO = 100;
-    public static final double PESO_DEFECTO = 5;
-    public static final String COLOR_DEFECTO = "blanco";
-    public static final ConsumoEnergetico CONSUMO_ENERGETICO_DEFECTO = ConsumoEnergetico.F;
+    // Atributos
+    private double precioBase;
+    private String color;
+    private String consumo;
+    private double peso;
 
-    public static final String[] COLORES_DISPONIBLES = {"blanco", "negro", "rojo", "azul", "gris"};
-
-    public enum ConsumoEnergetico {
-        A, B, C, D, E, F
+    // Constructor por defecto
+    public Electrodoméstico() {
+        this(DEFAULT_PRECIO_BASE, DEFAULT_PESO, DEFAULT_COLOR, DEFAULT_CONSUMO);
     }
 
-    public Three() {
-        this(PRECIO_BASE_DEFECTO, PESO_DEFECTO, COLOR_DEFECTO, CONSUMO_ENERGETICO_DEFECTO);
+    // Constructor con precio y peso
+    public Electrodoméstico(double precioBase, double peso) {
+        this(precioBase, peso, DEFAULT_COLOR, DEFAULT_CONSUMO);
     }
 
-    public Three(double precioBase, double peso) {
-        this(precioBase, peso, COLOR_DEFECTO, CONSUMO_ENERGETICO_DEFECTO);
-    }
+    // Constructor con todos los atributos
+    public Electrodoméstico(double precioBase, double peso, String color, String consumo) {
+        // Validar color (convertir a minúsculas)
+        this.color = Arrays.stream(AVAILABLE_COLORES)
+                .filter(c -> c.equalsIgnoreCase(color))
+                .findFirst()
+                .orElse(DEFAULT_COLOR);
 
-    public Three(double precioBase, double peso, String color, ConsumoEnergetico consumoEnergetico) {
+        // Validar consumo (convertir a mayúsculas)
+        this.consumo = Arrays.asList("A", "B", "C", "D", "E", "F").contains(consumo.toUpperCase())
+                ? consumo.toUpperCase()
+                : DEFAULT_CONSUMO;
+
         this.precioBase = precioBase;
         this.peso = peso;
-        this.color = comprobarColor(color.toLowerCase());
-        this.consumoEnergetico = comprobarConsumoEnergetico(consumoEnergetico);
     }
 
-    private String comprobarColor(String color) {
-        for (String colorDisponible : COLORES_DISPONIBLES) {
-            if (colorDisponible.equals(color)) {
-                return color;
-            }
-        }
-        return COLOR_DEFECTO;
-    }
-
-    private ConsumoEnergetico comprobarConsumoEnergetico(ConsumoEnergetico letra) {
-        return letra; // Enums already handle valid values
-    }
-
-    // Getters
-    public double getPrecioBase() {
-        return precioBase;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public ConsumoEnergetico getConsumoEnergetico() {
-        return consumoEnergetico;
-    }
-
-    public double getPeso() {
-        return peso;
-    }
-
+    // Ejemplo de uso
     public static void main(String[] args) {
-        Three electrodomestico1 = new Three();
-        System.out.println("Electrodomestico 1:");
-        System.out.println("Precio base: " + electrodomestico1.getPrecioBase());
-        System.out.println("Color: " + electrodomestico1.getColor());
-        System.out.println("Consumo energético: " + electrodomestico1.getConsumoEnergetico());
-        System.out.println("Peso: " + electrodomestico1.getPeso());
+        Electrodoméstico electrodomestico1 = new Electrodoméstico();
+        System.out.println("Electrodomestico 1: Precio base = " + electrodomestico1.precioBase +
+                ", Color = " + electrodomestico1.color +
+                ", Consumo = " + electrodomestico1.consumo +
+                ", Peso = " + electrodomestico1.peso);
 
-        Three electrodomestico2 = new Three(200, 10);
-        System.out.println("\nElectrodomestico 2:");
-        System.out.println("Precio base: " + electrodomestico2.getPrecioBase());
-        System.out.println("Color: " + electrodomestico2.getColor());
-        System.out.println("Consumo energético: " + electrodomestico2.getConsumoEnergetico());
-        System.out.println("Peso: " + electrodomestico2.getPeso());
+        Electrodoméstico electrodomestico2 = new Electrodoméstico(200, 10);
+        System.out.println("Electrodomestico 2: Precio base = " + electrodomestico2.precioBase +
+                ", Color = " + electrodomestico2.color +
+                ", Consumo = " + electrodomestico2.consumo +
+                ", Peso = " + electrodomestico2.peso);
 
-        Three electrodomestico3 = new Three(300, 15);
-        System.out.println("\nElectrodomestico 3:");
-        System.out.println("Precio base: " + electrodomestico3.getPrecioBase());
-        System.out.println("Color: " + electrodomestico3.getColor());
-        System.out.println("Consumo energético: " + electrodomestico3.getConsumoEnergetico());
-        System.out.println("Peso: " + electrodomestico3.getPeso());
+        Electrodoméstico electrodomestico3 = new Electrodoméstico(300, 15, "rojo", "A");
+        System.out.println("Electrodomestico 3: Precio base = " + electrodomestico3.precioBase +
+                ", Color = " + electrodomestico3.color +
+                ", Consumo = " + electrodomestico3.consumo +
+                ", Peso = " + electrodomestico3.peso);
     }
 }
