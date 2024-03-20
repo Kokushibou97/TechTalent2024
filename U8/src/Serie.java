@@ -6,29 +6,26 @@ public class Serie {
     private String genero;
     private String autor;
 
-    // Constructor por defecto//
+    // Constructor por defecto
     public Serie() {
-        this.titulo = "";
-        this.numTemporadas = 3;
-        this.completado= false;
-        this.genero = "";
-        this.autor = "";
+        this("", 3, false, "", "");
     }
 
-    // Constructor con título y el autor//
+    // Constructor con título y autor
     public Serie(String titulo, String autor) {
-        this.titulo = titulo;
-        this.numTemporadas = 3;
-        this.completado = false;
-        this.genero = "";
-        this.autor = autor;
+        this(titulo, 3, false, "", autor);
     }
 
-    // Constructor con todos los atributos excepto 'completado'//
+    // Constructor con todos los atributos excepto 'completado'
     public Serie(String titulo, int numTemporadas, String genero, String autor) {
+        this(titulo, numTemporadas, false, genero, autor);
+    }
+
+    // Constructor con todos los atributos
+    public Serie(String titulo, int numTemporadas, boolean completado, String genero, String autor) {
         this.titulo = titulo;
         this.numTemporadas = numTemporadas;
-        this.completado = false;
+        this.completado = completado;
         this.genero = genero;
         this.autor = autor;
     }
@@ -46,16 +43,16 @@ public class Serie {
         return numTemporadas;
     }
 
-    public void setNumeroTemporadas(int numTemporadas) {
+    public void setNumTemporadas(int numTemporadas) {
         this.numTemporadas = numTemporadas;
     }
 
-    public boolean isEntregado() {
+    public boolean isCompletado() {
         return completado;
     }
 
-    public void setEntregado(boolean entregado) {
-        this.completado = entregado;
+    public void setCompletado(boolean completado) {
+        this.completado = completado;
     }
 
     public String getGenero() {
@@ -66,12 +63,12 @@ public class Serie {
         this.genero = genero;
     }
 
-    public String getCreador() {
+    public String getAutor() {
         return autor;
     }
 
-    public void setCreador(String creador) {
-        this.autor = creador;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
     // Método toString para imprimir la información de la serie
@@ -79,10 +76,10 @@ public class Serie {
     public String toString() {
         return "Serie{" +
                 "titulo='" + titulo + '\'' +
-                ", numeroTemporadas=" + numTemporadas +
-                ", entregado=" + completado +
+                ", numTemporadas=" + numTemporadas +
+                ", completado=" + completado +
                 ", genero='" + genero + '\'' +
-                ", creador='" + autor + '\'' +
+                ", autor='" + autor + '\'' +
                 '}';
     }
 }
