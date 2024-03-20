@@ -44,17 +44,17 @@ public class Electrodoméstico {
 	}
 
 	public static void main(String[] args) {
-		Electrodoméstico electrodomestico1 = new Electrodoméstico();
+		Electrodoméstico electrodomestico1 = new Electrodoméstico();//constructor por defecto//
 		System.out.println("Electrodomestico 1: Precio base = " + electrodomestico1.precioBase + ", Color = "
 				+ electrodomestico1.color + ", Consumo = " + electrodomestico1.consumo + ", Peso = "
 				+ electrodomestico1.peso);
 
-		Electrodoméstico electrodomestico2 = new Electrodoméstico(200, 10);
+		Electrodoméstico electrodomestico2 = new Electrodoméstico(200, 10);//contructor con argumentos//
 		System.out.println("Electrodomestico 2: Precio base = " + electrodomestico2.precioBase + ", Color = "
 				+ electrodomestico2.color + ", Consumo = " + electrodomestico2.consumo + ", Peso = "
 				+ electrodomestico2.peso);
 
-		Electrodoméstico electrodomestico3 = new Electrodoméstico(300, 15, "rojo", "A");
+		Electrodoméstico electrodomestico3 = new Electrodoméstico(300, 15, "rojo", "A");//el último con 4 argumentos/atributos//
 		System.out.println("Electrodomestico 3: Precio base = " + electrodomestico3.precioBase + ", Color = "
 				+ electrodomestico3.color + ", Consumo = " + electrodomestico3.consumo + ", Peso = "
 				+ electrodomestico3.peso);
