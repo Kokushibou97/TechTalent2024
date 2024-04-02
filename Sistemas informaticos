@@ -1,0 +1,13 @@
+----------------------------------------sistemas informaticos--------------------------------------------------------------------------------------
+Virtual box: O máquina virtual es es un software de virtualización para arquitecturas x86/amd64. Dentro de este software se pueden intalar y ejecutar diferentes sistemas operativos, por ejemplo Debian y/o Ubuntu.
+
+Sistema operativo Fedora Server 39: Otro sistema operativo propio de linux; además de ser de código abierto se basa en la arquitectura del Kernel Linux(facilidad para los usuarios).
+
+
+
+------------------------------------------Bases de datos-------------------------------------------------------------------------------------------
+Las bases de datos son sistemas de almacenamiento de información (datos) relacionales, en las que se puede editar (crear, añadir, borrar, consultar...etc.) de forma más ágil y eficiente.
+
+Mysql 8: Es un sistema de administración de bases de datos de código abierto.
+
+MySQL Workbench: Una herramienta visual de administración de bases de datos para MySQL.
