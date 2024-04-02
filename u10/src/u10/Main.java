@@ -8,7 +8,7 @@ class MiExcepcion extends Exception {
 public class Main {
     public static void main(String[] args) {
         try {
-            // Lanzar la excepción personalizada
+
             throw new MiExcepcion("¡Esto es una excepción personalizada!");
         } catch (MiExcepcion e) {
             System.out.println("Se ha capturado la excepción: " + e.getMessage());
