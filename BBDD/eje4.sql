@@ -1,0 +1,13 @@
+CREATE TABLE DEPARTAMENTOS (
+    Codigo INT PRIMARY KEY,
+    Nombre NVARCHAR(100),
+    Presupuesto INT
+);
+
+CREATE TABLE EMPLEADOS (
+    DNI VARCHAR(8) PRIMARY KEY,
+    Nombre NVARCHAR(100),
+    Apellidos NVARCHAR(255),
+    Departamento INT,
+    FOREIGN KEY (Departamento) REFERENCES DEPARTAMENTOS(Codigo)
+);
