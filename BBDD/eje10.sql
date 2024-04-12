@@ -1,0 +1,21 @@
+-- Crear la tabla CIENTIFICOS
+CREATE TABLE CIENTIFICOS (
+    DNI VARCHAR(8) PRIMARY KEY,
+    NomApels NVARCHAR(255)
+);
+
+-- Crear la tabla PROYECTO
+CREATE TABLE PROYECTO (
+    Id CHAR(4) PRIMARY KEY,
+    Nombre NVARCHAR(255),
+    Horas INT
+);
+
+-- Crear la tabla ASIGNADO_A
+CREATE TABLE ASIGNADO_A (
+    Cientifico VARCHAR(8),
+    Proyecto CHAR(4),
+    PRIMARY KEY (Cientifico, Proyecto),
+    FOREIGN KEY (Cientifico) REFERENCES CIENTIFICOS(DNI),
+    FOREIGN KEY (Proyecto) REFERENCES PROYECTO(Id)
+);
