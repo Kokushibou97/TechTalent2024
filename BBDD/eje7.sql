@@ -1,9 +1,9 @@
--- Crear la tabla DESPACHOS
+
 CREATE TABLE DESPACHOS (
     Numero INT PRIMARY KEY,
     Capacidad INT
 );
--- Crear la tabla DIRECTORES
+
 CREATE TABLE DIRECTORES (
     DNI VARCHAR(8) PRIMARY KEY,
     NomApels NVARCHAR(255),
