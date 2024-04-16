@@ -10,6 +10,10 @@ CREATE TABLE INVESTIGADORES (
     NomApels NVARCHAR(255)
 );
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4e06e26a76cad3fc86ccfdf65917b880c82aa3d9
 CREATE TABLE RESERVA (
     Facultad INT,
     Comienzo DATETIME,
