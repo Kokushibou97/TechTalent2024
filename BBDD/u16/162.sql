@@ -1,31 +1,52 @@
-CREATE TABLE Empleados (
-    DNI varchar(9) PRIMARY KEY,
-    Nombre nvarchar(100),
-    Apellidos nvarchar(255),
-    Departamento int,
-    FOREIGN KEY (Departamento) REFERENCES Departamentos(Codigo)
-);
+-- Drop the Empleados table
+DROP TABLE IF EXISTS Empleados;
+
+-- Remove the foreign key constraint temporarily
+ALTER TABLE Empleados DROP FOREIGN KEY FK_Departamento;
+
+
+DROP TABLE IF EXISTS Departamentos;
+
 
 CREATE TABLE Departamentos (
-    Codigo varchar(8) PRIMARY KEY,
-    Nombre nvarchar(100),
-    Presupuesto int
+    Codigo INT PRIMARY KEY,
+    Nombre NVARCHAR(70),
+    Presupuesto INT
 );
 
-INSERT INTO Departamentos (Codigo, Nombre, Presupuesto) VALUES
-('14', 'D.proyectos', 50000),
-('37', 'D.contabilidad', 70000),
-('77', 'D.HR', 80000),
-('11', 'D.Calidad', 40000);
 
-INSERT INTO Empleados (DNI, Nombre, Apellidos, Departamento) VALUES
-('11111111A', 'Juan', 'Jarron', '14'),
-('22222222B', 'Mariano', 'Mereketengue', '37'),
-('33333333C', 'Palomo', 'Malomo', '77'),
-('44444444D', 'Marimar', 'Vergas', '14'),
-('55555555E', 'Jorge', 'Chungo', '37'),
-('66666666F', 'Sarai', 'Armay', '14'),
-('77777777G', 'Carucha', 'Defresado', '77'),
-('88888888H', 'Laurinda', 'Barbara', '37'),
-('99999999I', 'Cristian', 'Pintado', '14'),
-('89267109', 'Kolin', 'Lloron', '11');
+TRUNCATE TABLE Empleados;
+
+
+CREATE TABLE Empleados (
+    DNI VARCHAR(8) PRIMARY KEY,
+    Nombre FLOAT(20),
+    Apellidos NVARCHAR(255),
+    FK1_Departamento INT,
+    CONSTRAINT FK_Departamento FOREIGN KEY (FK1_Departamento) REFERENCES Departamentos(Codigo)
+);
+
+
+TRUNCATE TABLE Departamentos;
+
+
+INSERT INTO Departamentos (Codigo, Nombre, Presupuesto) VALUES
+(1, 'Seguridad y Salud', 50000),
+(2, 'IT', 60000),
+(3, 'Recursos Humanos', 80000),
+(4, 'Proyectos', 40000),
+(5, 'Contabilidad', 70000);
+
+
+INSERT INTO Empleados (DNI, Nombre, Apellidos, FK1_Departamento) VALUES
+('12345678', 'Martu', 'Chimichurri', 3),
+('23456789', 'Maria', 'Santa', 1),
+('34567890', 'Shufei', 'Yang', 2),
+('45678901', 'Carmona', 'Bombona', 3),
+('56789012', 'Julian', 'Vergonzola', 4),
+('67890123', 'Lorena', 'Eltemor', 5),
+('78901234', 'Davide', 'Bajos', 1),
+('89012345', 'Soria', 'Catalana', 2),
+('90123456', 'Leweve', 'Perfumado', 3),
+('01234567', 'Marcon', 'Zorron', 4);
+
