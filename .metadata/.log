@@ -3549,3 +3549,19 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2024-05-06 13:05:18.401
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\Jess97\AppData\Local\Temp\C__Users_Jess97_eclipse_jee-2023-12_eclipse_2fe80cbe-b6fa-465a-adb9-95e6573f2148
+!SESSION 2024-05-06 13:05:57.023 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data file:/C:/Users/Jess97/Desktop/Github/TechTalent2024/ -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-06 13:06:07.463
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-06 13:06:07.698
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
