@@ -1,0 +1,27 @@
+
+db.ALMACENES.insertOne({
+    "Codigo": 1, 
+    "Lugar": "Main Warehouse",
+    "Capacidad": 1000
+});
+
+
+db.CAJAS.insertMany([
+    {
+        "NumReferencia": "00001",
+        "Contenido": "Electronics",
+        "Lugar": "Shelf A",
+        "Capacidad": 50,
+        "Valor": 1000,
+        "FK1_Almacen": 1 
+    },
+    {
+        "NumReferencia": "00002",
+        "Contenido": "Clothing",
+        "Lugar": "Shelf B",
+        "Capacidad": 70,
+        "Valor": 2000,
+        "FK1_Almacen": 1 
+    }
+]);
+

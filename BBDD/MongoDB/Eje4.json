@@ -1,0 +1,12 @@
+
+db.PELICULAS.insertOne({
+    "Codigo": 1,
+    "Nombre": "The Shawshank Redemption",
+    "CalificacionEdad": 18
+});
+
+db.SALAS.insertOne({
+    "Codigo": 1,
+    "Nombre": "Room 1",
+    "FK1_Pelicula": 1 
+});

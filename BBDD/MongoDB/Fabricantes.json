@@ -1,0 +1,46 @@
+{
+    "name": "La Tienda de Informática",
+    "tables": [
+      {
+        "name": "FABRICANTES",
+        "columns": [
+          {
+            "name": "PK_Codigo",
+            "type": "int identity"
+          },
+          {
+            "name": "Nombre",
+            "type": "nvarchar(100)"
+          }
+        ],
+        "primary_key": "PK_Codigo"
+      },
+      {
+        "name": "ARTICULOS",
+        "columns": [
+          {
+            "name": "PK_Codigo",
+            "type": "int identity"
+          },
+          {
+            "name": "Nombre",
+            "type": "nvarchar(100)"
+          },
+          {
+            "name": "Precio",
+            "type": "int"
+          },
+          {
+            "name": "FK1_Fabricante",
+            "type": "int",
+            "foreign_key": {
+              "table": "FABRICANTES",
+              "column": "PK_Codigo"
+            }
+          }
+        ],
+        "primary_key": "PK_Codigo"
+      }
+    ]
+  }
+  

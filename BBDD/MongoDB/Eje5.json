@@ -1,0 +1,12 @@
+
+db.DIRECTORES.insertOne({
+    "DNI": "12345678", 
+    "NomApels": "John Smith",
+    "FK2_DNIJefe": null, 
+    "FK1_Despacho": 1 
+});
+
+db.DESPACHOS.insertOne({
+    "Numero": 1,
+    "Capacidad": 10
+});

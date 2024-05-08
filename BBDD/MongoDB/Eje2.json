@@ -1,0 +1,50 @@
+{
+    "name": "Empleados y Departamentos",
+    "tables": [
+      {
+        "name": "EMPLEADOS",
+        "columns": [
+          {
+            "name": "PK_DNI",
+            "type": "varchar(8)"
+          },
+          {
+            "name": "Nombre",
+            "type": "nvarchar(100)"
+          },
+          {
+            "name": "Apellidos",
+            "type": "nvarchar(255)"
+          },
+          {
+            "name": "FK1_Departamento",
+            "type": "int",
+            "foreign_key": {
+              "table": "DEPARTAMENTOS",
+              "column": "Codigo"
+            }
+          }
+        ],
+        "primary_key": "PK_DNI"
+      },
+      {
+        "name": "DEPARTAMENTOS",
+        "columns": [
+          {
+            "name": "PK_Codigo",
+            "type": "int"
+          },
+          {
+            "name": "Nombre",
+            "type": "nvarchar(100)"
+          },
+          {
+            "name": "Presupuesto",
+            "type": "int"
+          }
+        ],
+        "primary_key": "PK_Codigo"
+      }
+    ]
+  }
+  

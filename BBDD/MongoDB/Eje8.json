@@ -1,0 +1,24 @@
+
+db.FACULTAD.insertOne({
+    "Codigo": 1, 
+    "Nombre": "Engineering"
+});
+
+db.INVESTIGADORES.insertOne({
+    "DNI": "12345678", 
+    "NomApels": "John Doe",
+    "FK1_Facultad": 1 
+});
+
+db.EQUIPOS.insertOne({
+    "NumSerie": "0001", 
+    "Nombre": "Computer",
+    "FK1_Facultad": 1 
+});
+
+db.RESERVA.insertOne({
+    "DNI": "12345678", 
+    "NumSerie": "0001", 
+    "Comienzo": new Date("2024-05-08T08:00:00"), 
+    "Fin": new Date("2024-05-08T17:00:00") 
+});

@@ -1,0 +1,16 @@
+
+db.CIENTIFICOS.insertOne({
+    "DNI": "12345678",
+    "NomApels": "John Doe"
+});
+
+db.PROYECTO.insertOne({
+    "Id": "P001", 
+    "Nombre": "Project A",
+    "Horas": 100
+});
+
+db.ASIGNADO_A.insertOne({
+    "Cientifico": "12345678", 
+    "Proyecto": "P001" 
+});

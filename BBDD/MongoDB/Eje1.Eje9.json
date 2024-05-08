@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "6639e437ef8281afe719acdf"
+  },
+  "": "db.CIENTIFICOS.insertOne({"
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace0"
+  },
+  "": "    \"DNI\": \"12345678\""
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace1"
+  },
+  "": "    \"NomApels\": \"John Doe\""
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace2"
+  },
+  "": "});"
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace3"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace4"
+  },
+  "": "db.PROYECTO.insertOne({"
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace5"
+  },
+  "": "    \"Id\": \"P001\""
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace6"
+  },
+  "": "    \"Nombre\": \"Project A\""
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace7"
+  },
+  "": "    \"Horas\": 100"
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace8"
+  },
+  "": "});"
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719ace9"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719acea"
+  },
+  "": "db.ASIGNADO_A.insertOne({"
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719aceb"
+  },
+  "": "    \"Cientifico\": \"12345678\""
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719acec"
+  },
+  "": "    \"Proyecto\": \"P001\" "
+},
+{
+  "_id": {
+    "$oid": "6639e437ef8281afe719aced"
+  },
+  "": "});"
+}]

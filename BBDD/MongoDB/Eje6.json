@@ -1,0 +1,18 @@
+
+db.PIEZAS.insertOne({
+    "Codigo": 1,
+    "Nombre": "Pieza A",
+    "Precio": 1000
+});
+
+db.PROVEEDORES.insertOne({
+    "CodigoPieza": 1, 
+    "Id": "P001", 
+    "Nombre": "Proveedor A"
+});
+
+db.SUMINISTRA.insertOne({
+    "Codigo": 1, 
+    "IdProveedor": "P001", 
+    "FK2_IdProveedor": "P001"
+});

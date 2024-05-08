@@ -1,0 +1,22 @@
+
+db.PRODUCTOS.insertOne({
+    "Codigo": 1, 
+    "Nombre": "Smartphone",
+    "Precio": 500
+});
+
+db.CAJEROS.insertOne({
+    "Codigo": 1, 
+    "NomApels": "Alice Smith"
+});
+
+db.MAQUINAS_REGISTRADORAS.insertOne({
+    "Codigo": 1, 
+    "Piso": 1
+});
+
+db.VENTA.insertOne({
+    "Cajero": 1,
+    "Maquina": 1, 
+    "Producto": 1, 
+});
