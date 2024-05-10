@@ -114,38 +114,39 @@ public class MiniCalculadora extends JFrame implements ActionListener {
 		textField.setBorder(BorderFactory.createLineBorder(Color.GRAY));            // borde
 		textField.setFont(new Font("Segoe UI", Font.PLAIN, 14));                    // fuente y tamaño de texto
 	}
-
+//tenemos el metodo action, que se activa con los clics (evento), cuyo parametro es el action event, que contine info de los clics o acciones occuridas //
 	public void actionPerformed(ActionEvent e) {                                    //logica + los eventos de accion: clics en botones o seleccion de opciones de menu.
-		if (e.getActionCommand().equals("About")) {
-			String aboutMensaje = "Pascal's_Calculator\nVersión 1.0\n\nDesarrollado por:\n" + "LAJ TechTigresas";
+		//verificación//
+		if (e.getActionCommand().equals("About")) {//about se ejecuta con el if//
+			String aboutMensaje = "Pascal's_Calculator\nVersión 1.0\n\nDesarrollado por:\n" + "LAJ TechTigresas";//mensaje informativo//
 			JOptionPane.showMessageDialog(this, aboutMensaje, "About", JOptionPane.INFORMATION_MESSAGE);
-		} else if (e.getActionCommand().equals("Exit")) {
+		} else if (e.getActionCommand().equals("Exit")) {//si la acción es exit, se sale//
 			System.exit(0);
-		} else if (e.getActionCommand().equals("History")) {                         //barraMenu
-			JTextArea historyArea = new JTextArea();
-			historyArea.setEditable(false);
+		} else if (e.getActionCommand().equals("History")) {    //historial//                     //barraMenu
+			JTextArea historyArea = new JTextArea();//este se usa para demostrar el historial 
+			historyArea.setEditable(false);//y desactiva el modo edición//
 			historyArea.setRows(10);
 			historyArea.setColumns(30);
 
-			StringBuilder historyText = new StringBuilder();
-			for (String calculation : calculationHistory) {
-				historyText.append(calculation).append("\n");
+			StringBuilder historyText = new StringBuilder();//este bucle recorre el historial y muestra la cadena de cada calculo//
+			for (String calculation : calculationHistory) {//el historial se muestra dentro de JTextArea//
+				historyText.append(calculation).append("\n");//salto de linea, para que sea legible//
 			}
 			historyArea.setText(historyText.toString());
 
-			JScrollPane scrollPane = new JScrollPane(historyArea);
-			JOptionPane.showMessageDialog(this, scrollPane, "Calculation History", JOptionPane.PLAIN_MESSAGE);   
-		} else if (e.getSource() == resetButton) {
+			JScrollPane scrollPane = new JScrollPane(historyArea);//Es para desplazar si el texto es demasiado grande//
+			JOptionPane.showMessageDialog(this, scrollPane, "Calculation History", JOptionPane.PLAIN_MESSAGE);   //este es el que muestra la caja del dialogo, sin botones//
+		} else if (e.getSource() == resetButton) {//resetea//verifica la limpieza//
 			
 			textField1.setText("");
 			textField2.setText("");                                //limpiar campos de texto
 			resultField.setText("");
 		} else {
 			double num1, num2;
-			try {
+			try {//aqui se declaran dos variables y se guardan sus valores//
 				num1 = Double.parseDouble(textField1.getText());
 				num2 = Double.parseDouble(textField2.getText());
-			} catch (NumberFormatException ex) {
+			} catch (NumberFormatException ex) {//aqui se hace el intento de convertir los valores introducidos a nº, si falla muestra mensaje de error//
 				JOptionPane.showMessageDialog(this, "Por favor, introduce números válidos.", "Error",
 						JOptionPane.ERROR_MESSAGE);
 				return;
@@ -172,10 +173,10 @@ public class MiniCalculadora extends JFrame implements ActionListener {
 
 			resultField.setText(String.valueOf(result));
 			
-			String calculo = num1 + " " + e.getActionCommand() + " " + num2 + " = " + result;          // agregar el cálculo al historial
+			String calculo = num1 + " " + e.getActionCommand() + " " + num2 + " = " + result;          // metodo: agregar el cálculo al historial
 			agregarAlHistorial(calculo);
 		}
-	}
+	}///hasta aqui
 
 	private void agregarAlHistorial(String calculo) {                        //met. para agregar un calculo al historial
 		calculationHistory.add(calculo);
