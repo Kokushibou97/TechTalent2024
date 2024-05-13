@@ -9,28 +9,28 @@ public class EJE2 {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 200);
 
-        // Crear componentes
+        //componentes//
         JLabel label = new JLabel("Película:");
         JTextField textField = new JTextField(20);
         JButton addButton = new JButton("Añadir");
         JComboBox<String> peliculasComboBox = new JComboBox<>();
 
-        // Establecer colores y bordes
+        //Establecer colores y bordes//
         addButton.setBackground(Color.GREEN);
         addButton.setForeground(Color.WHITE);
         addButton.setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
 
-        // Agregar acción al botón
+        //añadir acción al botón//
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String nuevaPelicula = textField.getText();
                 peliculasComboBox.addItem(nuevaPelicula);
-                textField.setText(""); // Limpiar el campo de texto
+                textField.setText(""); // Limpiar el campo de texto//
             }
         });
 
-        // Crear panel y agregar componentes
+        //Crear panel y agregar componentes//
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout());
         panel.add(label);
@@ -38,7 +38,7 @@ public class EJE2 {
         panel.add(addButton);
         panel.add(peliculasComboBox);
 
-        // Agregar panel al frame
+        //Agregar panel al frame//
         frame.add(panel);
         frame.setVisible(true);
     }
