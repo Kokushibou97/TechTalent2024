@@ -1,5 +1,5 @@
 package UD18_JDBC;
-import java.sql.Connection;
+import java.sql.Connection;     // necesarias para trabajar con JDBC (Java Database Connectivity), que es la API estándar de Java para interactuar con bases de datos//
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
