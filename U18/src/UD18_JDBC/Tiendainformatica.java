@@ -4,15 +4,15 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 public class Tiendainformatica {
-	 // JDBC URL, username, and password of MySQL server
+	 // JDBC URL, username, and password de Mysql//
     private static final String URL = "jdbc:mysql://localhost:3306";
     private static final String USER = "root";
     private static final String PASSWORD = "";
     
- // JDBC variables for opening and managing connection
+ // JDBC variables que abren y manejan la conexión
     private static Connection con;
     private static Statement stmt;
-
+//creación de bases de datos (la vertebra y la carne)//
     public static void main(String[] args) {
         String dbName = "tiendaInformatica";
         
@@ -49,26 +49,26 @@ public class Tiendainformatica {
         };
 
         try {
-            // Opening database connection
+            // abrir la conexión a bases de datos//
             con = DriverManager.getConnection(URL, USER, PASSWORD);
             stmt = con.createStatement();
 
-            // Creating the database
+            // creación//
             stmt.executeUpdate(createDatabaseSQL);
 
-            // Using the newly created database
+            //uso de la nva base de datos//
             stmt.executeUpdate(useDatabaseSQL);
 
-            // Creating the tables
+            // crear tablas//
             stmt.executeUpdate(createTableFabricantesSQL);
             stmt.executeUpdate(createTableArticulosSQL);
 
-            // Inserting records into FABRICANTES
+            // Insertar datos en FABRICANTES
             for (String sql : insertFabricantesSQL) {
                 stmt.executeUpdate(sql);
             }
 
-            // Inserting records into ARTICULOS
+            // lo mismo para ARTICULOS//
             for (String sql : insertArticulosSQL) {
                 stmt.executeUpdate(sql);
             }
@@ -78,7 +78,7 @@ public class Tiendainformatica {
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
         } finally {
-            // Close connection and statement
+            //finalmente, se cierra la conexión a la base//
             try {
                 con.close();
             } catch(SQLException se) {
