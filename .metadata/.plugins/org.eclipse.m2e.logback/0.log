@@ -458,3 +458,6 @@
 2024-05-27 10:33:03,138 [Worker-55: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
 2024-05-27 10:33:30,022 [Worker-59: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
 2024-05-27 10:33:30,024 [Worker-59: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-27 10:34:09,373 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-27 10:46:48,104 [Worker-25: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-27 10:46:48,117 [Worker-25: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
