@@ -379,3 +379,82 @@
 2024-05-21 10:21:46,799 [Worker-17: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2024-05-21 11:05:44,763 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2024-05-21 11:06:23,793 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-21 13:48:18,648 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2024-05-21 13:48:22,512 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234 [1258])
+2024-05-21 13:48:22,516 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234
+2024-05-21 13:48:22,517 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\aopalliance-1.0.jar
+2024-05-21 13:48:22,517 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\guice-5.1.0.jar
+2024-05-21 13:48:22,518 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpclient-4.5.14.jar
+2024-05-21 13:48:22,518 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpcore-4.4.16.jar
+2024-05-21 13:48:22,518 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jansi-2.4.0.jar
+2024-05-21 13:48:22,518 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jcl-over-slf4j-1.7.36.jar
+2024-05-21 13:48:22,519 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-artifact-3.9.6.jar
+2024-05-21 13:48:22,519 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-builder-support-3.9.6.jar
+2024-05-21 13:48:22,519 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-compat-3.9.6.jar
+2024-05-21 13:48:22,519 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-core-3.9.6.jar
+2024-05-21 13:48:22,520 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-embedder-3.9.6.jar
+2024-05-21 13:48:22,520 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-3.9.6.jar
+2024-05-21 13:48:22,520 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-builder-3.9.6.jar
+2024-05-21 13:48:22,520 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-plugin-api-3.9.6.jar
+2024-05-21 13:48:22,520 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-repository-metadata-3.9.6.jar
+2024-05-21 13:48:22,521 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-api-1.9.18.jar
+2024-05-21 13:48:22,521 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-connector-basic-1.9.18.jar
+2024-05-21 13:48:22,521 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-impl-1.9.18.jar
+2024-05-21 13:48:22,521 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-named-locks-1.9.18.jar
+2024-05-21 13:48:22,521 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-provider-3.9.6.jar
+2024-05-21 13:48:22,523 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-spi-1.9.18.jar
+2024-05-21 13:48:22,523 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-file-1.9.18.jar
+2024-05-21 13:48:22,523 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-http-1.9.18.jar
+2024-05-21 13:48:22,523 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-wagon-1.9.18.jar
+2024-05-21 13:48:22,524 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-util-1.9.18.jar
+2024-05-21 13:48:22,524 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-3.9.6.jar
+2024-05-21 13:48:22,525 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-builder-3.9.6.jar
+2024-05-21 13:48:22,525 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-shared-utils-3.3.4.jar
+2024-05-21 13:48:22,525 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2024-05-21 13:48:22,526 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2024-05-21 13:48:22,526 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-build-api-0.0.7.jar
+2024-05-21 13:48:22,526 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-cipher-2.0.jar
+2024-05-21 13:48:22,526 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-classworlds-2.7.0.jar
+2024-05-21 13:48:22,526 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-component-annotations-2.1.0.jar
+2024-05-21 13:48:22,526 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-interpolation-1.26.jar
+2024-05-21 13:48:22,527 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-sec-dispatcher-2.0.jar
+2024-05-21 13:48:22,527 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-utils-3.5.1.jar
+2024-05-21 13:48:22,527 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-file-3.5.3.jar
+2024-05-21 13:48:22,527 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-3.5.3.jar
+2024-05-21 13:48:22,527 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-shared-3.5.3.jar
+2024-05-21 13:48:22,528 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-provider-api-3.5.3.jar
+2024-05-21 13:48:22,531 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.0.0.jre [994])
+2024-05-21 13:48:22,532 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\com.google.guava_33.0.0.jre.jar
+2024-05-21 13:48:22,532 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.13 [1430])
+2024-05-21 13:48:22,533 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\slf4j.api_2.0.13.jar
+2024-05-21 13:48:22,533 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [29])
+2024-05-21 13:48:22,533 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2024-05-21 13:48:22,533 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [24])
+2024-05-21 13:48:22,534 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\jakarta.annotation-api_1.3.5.jar
+2024-05-21 13:48:22,534 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [71])
+2024-05-21 13:48:22,535 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.apache.commons.cli_1.6.0.jar
+2024-05-21 13:48:22,535 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [75])
+2024-05-21 13:48:22,535 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2024-05-21 13:48:22,536 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.14.0 [1019])
+2024-05-21 13:48:22,536 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\org.apache.commons.lang3_3.14.0.jar
+2024-05-21 13:48:22,536 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [13])
+2024-05-21 13:48:22,536 [Worker-55: Launching C4] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Jess97\.p2\pool\plugins\com.google.guava.failureaccess_1.0.2.jar
+2024-05-21 13:48:22,541 [Worker-55: Launching C4] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\Jess97\Desktop\Github\TechTalent2024\C4":
+2024-05-21 13:48:22,542 [Worker-55: Launching C4] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always 
+2024-05-21 13:53:32,006 [Worker-52: Launching Juego] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-21 13:53:32,016 [Worker-52: Launching Juego] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-27 09:09:30,273 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-27 09:22:51,896 [Worker-29: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-27 09:22:51,912 [Worker-29: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-27 09:26:11,228 [Worker-31: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-27 09:26:11,232 [Worker-31: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-27 09:51:52,058 [Worker-42: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-27 09:51:52,065 [Worker-42: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-27 09:53:36,608 [Worker-42: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-27 09:53:36,612 [Worker-42: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-27 10:12:13,579 [Worker-50: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-27 10:12:13,585 [Worker-50: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-27 10:33:03,134 [Worker-55: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-27 10:33:03,138 [Worker-55: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-27 10:33:30,022 [Worker-59: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-27 10:33:30,024 [Worker-59: Launching Grupal] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
