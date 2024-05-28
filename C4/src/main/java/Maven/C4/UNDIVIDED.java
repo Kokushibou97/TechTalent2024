@@ -10,7 +10,8 @@ import java.util.Collections;
 
 public class UNDIVIDED extends JFrame {
     private JButton[] buttons = new JButton[16];
-    private ArrayList<Color> colors = new ArrayList<>();    
+    private ArrayList<Color> colors = new ArrayList<>();
+    private ArrayList<Color> imagenes = new ArrayList<>();
     private JButton firstButton = null;
     private JButton secondButton = null;
     private Color firstColor;
@@ -43,6 +44,7 @@ public class UNDIVIDED extends JFrame {
         for (Color color : colorArray) {
             colors.add(color);
             colors.add(color);
+            imagenes.add();
         }
         Collections.shuffle(colors);
         
@@ -50,8 +52,8 @@ public class UNDIVIDED extends JFrame {
         panel.setBorder(new EmptyBorder(5,5,5,5));
         panel.setBackground(Color.CYAN);
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        JLabel titul1 = new JLabel("Construye memoria con");
-        JLabel titul2 = new JLabel("construcciones Abdellah");
+        JLabel titul1 = new JLabel("Encuentra a los dictadores");
+        JLabel titul2 = new JLabel("con Abdellah :) ");
         titul1.setFont(new Font(Font.SERIF, Font.PLAIN, 35));
         titul2.setFont(new Font(Font.SERIF, Font.PLAIN, 30));
         titul1.setForeground(Color.MAGENTA);
