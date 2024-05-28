@@ -520,3 +520,15 @@
 2024-05-28 10:58:58,164 [Worker-58: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
 2024-05-28 11:00:27,928 [Worker-57: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
 2024-05-28 11:00:27,932 [Worker-57: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-28 11:07:01,432 [Worker-59: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-28 11:07:01,433 [Worker-59: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-28 11:13:54,554 [Worker-59: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-28 11:13:54,558 [Worker-59: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-28 11:14:35,130 [Worker-53: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-28 11:14:35,134 [Worker-53: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-28 11:14:54,111 [Worker-53: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-28 11:14:54,114 [Worker-53: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-28 11:15:06,771 [Worker-3: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-28 11:15:06,776 [Worker-3: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources
+2024-05-28 11:15:18,095 [Worker-41: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\main\resources
+2024-05-28 11:15:18,096 [Worker-41: Launching UNDIVIDED] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Jess97\Desktop\Github\TechTalent2024\C4\src\test\resources

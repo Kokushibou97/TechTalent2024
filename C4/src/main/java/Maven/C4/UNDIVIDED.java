@@ -49,10 +49,17 @@ public class UNDIVIDED extends JFrame {
         JPanel panel = new JPanel();
         panel.setBorder(new EmptyBorder(5,5,5,5));
         panel.setBackground(Color.CYAN);
-        JLabel titul = new JLabel("Construye memoria con construcciones Abdellah");
-        titul.setFont(new Font(Font.SERIF, Font.PLAIN, 35));
-        titul.setForeground(Color.MAGENTA);
-        panel.add(titul);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        JLabel titul1 = new JLabel("Construye memoria con");
+        JLabel titul2 = new JLabel("construcciones Abdellah");
+        titul1.setFont(new Font(Font.SERIF, Font.PLAIN, 35));
+        titul2.setFont(new Font(Font.SERIF, Font.PLAIN, 30));
+        titul1.setForeground(Color.MAGENTA);
+        titul2.setForeground(Color.MAGENTA);
+        titul1.setAlignmentX(Component.CENTER_ALIGNMENT);   
+        titul2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panel.add(titul1);
+        panel.add(titul2);
         pos.gridy = 0;
         add(panel, pos);
         
