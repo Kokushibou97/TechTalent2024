@@ -1,17 +1,15 @@
 package Maven.C4;
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
+import javax.swing.Timer;
+import javax.swing.border.*;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.awt.event.*;
+import java.util.*;
 
 public class UNDIVIDED extends JFrame {
     private JButton[] buttons = new JButton[16];
     private ArrayList<Color> colors = new ArrayList<>();
-    private ArrayList<Color> imagenes = new ArrayList<>();
     private JButton firstButton = null;
     private JButton secondButton = null;
     private Color firstColor;
@@ -40,11 +38,12 @@ public class UNDIVIDED extends JFrame {
             Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW,
             Color.ORANGE, Color.CYAN, Color.MAGENTA, Color.PINK
         };
-
+        
+        ArrayList<Color> verificar = new ArrayList<>();
+        
         for (Color color : colorArray) {
             colors.add(color);
             colors.add(color);
-            imagenes.add();
         }
         Collections.shuffle(colors);
         
@@ -52,7 +51,7 @@ public class UNDIVIDED extends JFrame {
         panel.setBorder(new EmptyBorder(5,5,5,5));
         panel.setBackground(Color.CYAN);
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        JLabel titul1 = new JLabel("Encuentra a los dictadores");
+        JLabel titul1 = new JLabel("Encuentra las parejas de color");
         JLabel titul2 = new JLabel("con Abdellah :) ");
         titul1.setFont(new Font(Font.SERIF, Font.PLAIN, 35));
         titul2.setFont(new Font(Font.SERIF, Font.PLAIN, 30));
@@ -118,6 +117,7 @@ public class UNDIVIDED extends JFrame {
                     	intentos = 0;
                         firstButton.setEnabled(false);
                         secondButton.setEnabled(false);
+                        System.out.print("Encontrado");
                         
                         pairsFound++; // Incrementar el contador de parejas encontradas
                         panelParejas.removeAll();
