@@ -1,12 +1,10 @@
 package com.example.crudswingmvc.model;
 
-package com.example.crudswingmvc.model;
-
-public class Cientifico {
-    private String dni;
+public class Cientific {
+	private String dni;
     private String nombreApellidos;
 
-    public Cientifico(String dni, String nombreApellidos) {
+    public Cientific(String dni, String nombreApellidos) {
         this.dni = dni;
         this.nombreApellidos = nombreApellidos;
     }
