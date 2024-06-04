@@ -3,10 +3,10 @@ package View;
 import java.awt.event.WindowAdapter;
 
 import javax.swing.*;
-import java.awt.event.*;
 
-import Manel.c4backend.t22.ej1.controller.Conexiones;
-import Manel.c4backend.t22.ej1.controller.Listeners;
+import Controler.*;
+
+import java.awt.event.*;
 
 public class SelectTableView extends JFrame {
 

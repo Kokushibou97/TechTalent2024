@@ -1,14 +1,13 @@
 package View;
 
 import javax.swing.*;
+
+import Controler.*;
+import model.*;
+
 import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import Manel.c4backend.t22.ej1.controller.Conexiones;
-import Manel.c4backend.t22.ej1.controller.Listeners;
-import Manel.c4backend.t22.ej1.model.Cientificos;
-import Manel.c4backend.t22.ej1.model.Proyecto;
 
 public class InsertAsignadoaView extends JFrame {
 

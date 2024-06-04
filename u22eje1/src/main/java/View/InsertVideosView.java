@@ -12,9 +12,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import Manel.c4backend.t22.ej1.controller.Conexiones;
-import Manel.c4backend.t22.ej1.controller.Listeners;
-import Manel.c4backend.t22.ej1.model.Cliente;
+import Controler.Conexiones;
+import Controler.Listeners;
+import model.Cliente;
 
 
 public class InsertVideosView extends JFrame{

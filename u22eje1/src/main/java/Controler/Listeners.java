@@ -5,13 +5,8 @@ import java.util.List;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import Manel.c4backend.t22.ej1.model.Asignado;
-import Manel.c4backend.t22.ej1.model.Cientificos;
-import Manel.c4backend.t22.ej1.model.Cliente;
-import Manel.c4backend.t22.ej1.model.Methods;
-import Manel.c4backend.t22.ej1.model.Proyecto;
-import Manel.c4backend.t22.ej1.model.Videos;
-import Manel.c4backend.t22.ej1.view.*;
+import model.*;
+import View.*;
 
 public class Listeners {
 

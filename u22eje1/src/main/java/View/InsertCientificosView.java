@@ -4,9 +4,8 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
+import Controler.*;
 
-import Manel.c4backend.t22.ej1.controller.Conexiones;
-import Manel.c4backend.t22.ej1.controller.Listeners;
 
 public class InsertCientificosView extends JFrame {
 

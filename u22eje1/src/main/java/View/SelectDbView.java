@@ -6,8 +6,8 @@ import java.awt.event.WindowAdapter;
 
 import javax.swing.*;
 
-import Manel.c4backend.t22.ej1.controller.Conexiones;
-import Manel.c4backend.t22.ej1.controller.Listeners;
+import Controler.*;
+
 
 public class SelectDbView extends JFrame {
 

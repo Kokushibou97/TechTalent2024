@@ -1,5 +1,7 @@
 package u22eje1;
-import view.*;
+
+import View.LoginView;
+
 public class Main {
 
 	public static void main(String[] args) {

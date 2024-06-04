@@ -4,7 +4,9 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
-import Manel.c4backend.t22.ej1.controller.*;
+import Controler.Conexiones;
+import Controler.Listeners;
+
 
 public class InsertClienteView extends JFrame {
 

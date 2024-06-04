@@ -9,8 +9,8 @@ import java.util.List;
 import javax.swing.*;
 import javax.swing.table.*;
 
-import Manel.c4backend.t22.ej1.controller.*;
-import Manel.c4backend.t22.ej1.model.*;
+import Controler.*;
+import model.*;
 
 public class UpdateView extends JFrame {
 

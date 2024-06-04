@@ -1,6 +1,5 @@
 package com.example.crudswingmvc.controller;
 
-import com.example.crudswingmvc.model.Cientifico;
 import com.example.crudswingmvc.view.CientificoView;
 
 import javax.swing.*;
@@ -9,11 +8,11 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CientificoController {
+public class CientificController {
     private CientificoView view;
-    private List<Cientifico> cientificos;
+    private List<Cientific> cientificos;
 
-    public CientificoController(CientificoView view) {
+    public CientificController(CientificoView view) {
         this.view = view;
         this.cientificos = new ArrayList<>();
         this.view.getAddButton().addActionListener(new AddCientificoListener());
@@ -27,7 +26,7 @@ public class CientificoController {
         public void actionPerformed(ActionEvent e) {
             String dni = view.getDniField().getText();
             String nombreApellidos = view.getNombreApellidosField().getText();
-            Cientifico cientifico = new Cientifico(dni, nombreApellidos);
+            Cientific cientifico = new Cientific(dni, nombreApellidos);
             cientificos.add(cientifico);
             JOptionPane.showMessageDialog(view, "Científico agregado exitosamente.");
         }
@@ -51,7 +50,7 @@ public class CientificoController {
         @Override
         public void actionPerformed(ActionEvent e) {
             StringBuilder sb = new StringBuilder();
-            for (Cientifico cientifico : cientificos) {
+            for (Cientific cientifico : cientificos) {
                 sb.append(cientifico.getDni()).append(" - ").append(cientifico.getNombreApellidos()).append("\n");
             }
             JOptionPane.showMessageDialog(view, sb.toString());

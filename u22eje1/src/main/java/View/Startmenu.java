@@ -4,8 +4,7 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
-import Manel.c4backend.t22.ej1.controller.Conexiones;
-import Manel.c4backend.t22.ej1.controller.Listeners;
+import Controler.*;
 
 public class Startmenu extends JFrame{
 

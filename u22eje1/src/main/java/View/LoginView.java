@@ -2,9 +2,10 @@ package View;
 
 import javax.swing.*;
 
+import Controler.*;
+
 import java.awt.event.*;
 
-import Manel.c4backend.t22.ej1.controller.Listeners;
 
 public class LoginView extends JFrame {
 
