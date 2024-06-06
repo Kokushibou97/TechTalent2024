@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>PROYECTO GRUPAL</title>
-    <link rel="stylesheet" href="estilo_web.css">
-</head>
-<body>
-    <header>
-        <h1>Proyecto: Hacer una página web simple</h1>
-    </header>
 
-    <main>
-        <section>
-            <p>Objetivo: realización de una página web, incluyendo su contenido, usando lenguaje HTML y CSS.</p>
-        </section>
+	<head>
+		<title> PROYECTO GRUPAL </title>
+        <link rel="stylesheet" href="../Grupal Pag Web Simple/estilo_web.css">
+        
+	</head>
+	
+	<body>
+		<h1>Proyecto: Hacer una pagina web simple</h1>
 
-        <section>
-            <h2>Integrantes del proyecto</h2>
-            <ul>
-                <li>Laia</li>
-                <li>Jess</li>
-                <li>Alex</li>
-            </ul>
-        </section>
+		<p> <b>Objetivo:</b> realiación de una página web, incluyendo su contenido, usando lenguaje HTML y CSS.</p>
 
-        <section>
-            <h2>Imágenes del proyecto</h2>
-            <img src="gato_informatico.png" width="15%" height="15%" alt="Gato Informático"/>
-            <img src="teamwork.png" width="15%" height="15%" alt="Trabajo en Equipo"/>
-            <img src="pag_web.png" width="15%" height="15%" alt="Página Web"/>
-        </section>
+		<ul type="disc">
+            <li>Laia</li>
+            <li>Jess</li>
+            <li>Alex</li>
+        </ul> 
+        
+        
+		<img src="gato_informatico.png" width="15%" height="15%"/>
+        <img src="teamwork.png" width="15%" height="15%"/>
+        <img src="pag_web.png" width="15%" height="15%"/>
 
-        <section>
-            <h2>Formulario de contacto</h2>
-            <form action="ruta_del_servidor_que_recibe_los_datos" method="post">
-                <p>
-                    <label for="nombre">Introduce tu nombre:</label>
-                </p>
-                <textarea id="nombre" name="intro_nombre" rows="1" cols="40">Escribe aquí tu nombre</textarea>
+        <form action="ruta_del_servidor_que_recibe_los_datos" method="post">
+            <p id="nombre">
+                Introduce tu nombre:
+            </p>
+            <textarea name="intro_nombre" rows="1" cols="40"> Escribe aquí tu nombre </textarea>
 
-                <p>
-                    <label for="mail">Introduce tu e-mail:</label>
-                </p>
-                <textarea id="mail" name="intro_mail" rows="1" cols="40">Escribe aquí tu e-mail</textarea>
+            <p id="mail">
+                Introduce tu e-mail:
+            </p>
+            <textarea name="intro_mail" rows="1" cols="40"> Escribe aquí tu e-mail </textarea>
+            
+            <p id="mensaje">
+                Introduce tu mensaje:
+            </p>
+            <textarea name="intro_mensaje" rows="10" cols="80"> Escribe aquí tu mensaje </textarea>
 
-                <p>
-                    <label for="mensaje">Introduce tu mensaje:</label>
-                </p>
-                <textarea id="mensaje" name="intro_mensaje" rows="10" cols="80">Escribe aquí tu mensaje</textarea>
+            <!-- Botón para enviar el formulario -->
+            <br>
+            <button type="submit">Enviar</button>
 
-                <!-- Botón para enviar el formulario -->
-                <br>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+        </form>
 
-    <footer>
-        <p>&copy; 2024 Proyecto Grupal</p>
-    </footer>
-</body>
+        <a href="#" id="backToTop" title="Volver arriba">↑</a>
+
+
+	</body>
+
 </html>
