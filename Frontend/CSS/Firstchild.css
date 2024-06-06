@@ -1,0 +1,5 @@
+/* Estilo para el primer hijo */
+.contenedor p:first-child {
+    color: rgb(0, 247, 255);
+    font-weight: bold;
+}
