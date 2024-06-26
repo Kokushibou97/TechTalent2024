@@ -1,0 +1,6 @@
+.menu-item {
+    background-image: url('path-to-menu-item-image.png');
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+  }
