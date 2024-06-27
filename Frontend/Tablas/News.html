@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Ordenada de Diarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        ol li {
+            margin-bottom: 10px;
+        }
+        ol li ol {
+            list-style-type: lower-alpha; /* a, b, c */
+        }
+        ol li ol li {
+            margin-bottom: 5px;
+        }
+        ol li ol ol {
+            list-style-type: upper-roman; /* I, II, III */
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diarios de:</h1>
+    <ol>
+        <li>ESPAÑA
+            <ol>
+                <li>El Mundo</li>
+                <li>El País</li>
+                <li>La Vanguardia</li>
+            </ol>
+        </li>
+        <li>EE.UU.
+            <ol>
+                <li>New York Times</li>
+                <li>The Washington Post</li>
+            </ol>
+        </li>
+    </ol>
+</body>
+</html>
