@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        /* Contenedor principal con Grid */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* Dos columnas: una más ancha para el contenido principal */
+            gap: 10px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        /* Encabezado */
+        header {
+            grid-column: 1 / -1; /* Ocupa todas las columnas */
+            background-color: #0056b3;
+            color: #ffffff;
+            padding: 10px;
+            text-align: right;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        /* Navegación lateral */
+        .sidebar {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            color: #333333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Contenido principal */
+        .main-content {
+            padding: 10px;
+        }
+        .main-content h2 {
+            margin-top: 0;
+        }
+        /* Pie de página */
+        footer {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            grid-column: 1 / -1; /* Ocupa todas las columnas */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#">Microsoft Bing</a>
+            <a href="#">Imágenes</a>
+            <a href="#">Vídeos</a>
+            <span><a href="#">català</a> <a href="#">English</a></span>
+            <a href="#">Iniciar sesión</a>
+            <a href="#">Rewards</a>
+            <a href="#">Q</a>
+            <a href="#">Info</a>
+            <a href="#">&lt;&gt;</a>
+        </header>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">eldiario.es</a></li>
+                <li><a href="#">Una jueza tumba los presupuestos del Ayuntamiento de...</a></li>
+                <li><a href="#">El efecto 'Gambito de dama': las Corts Valencianes aprueban...</a></li>
+                <li><a href="#">Expertos reclaman un "debate sosegado" sobre la ampliación del Pue...</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Confirman 24.475 contagios y 496 muertes en las últimas 24 horas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            <p>Protección de datos europea</p>
+        </div>
+        <footer>
+            <p>&copy;2021 Microsoft</p>
+        </footer>
+    </div>
+</body>
+</html>
