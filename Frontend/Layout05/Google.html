@@ -5,76 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <style>
-        /* Estilos básicos para simular la apariencia de Google */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f1f1f1;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f2f2f2;
         }
-        .header {
-            background-color: #4285f4;
-            color: #ffffff;
+        .logo {
+            margin-top: 50px;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+        .search-bar {
+            width: 100%;
             padding: 10px;
-            text-align: right;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+            font-size: 16px;
         }
-        .header a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-left: 10px;
+        .buttons {
+            margin-top: 20px;
         }
-        .content {
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: #ffffff;
-            padding: 20px;
-            border: 1px solid #dddddd;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .buttons input {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #5f6368;
+            cursor: pointer;
+            margin: 0 5px;
         }
-        .nav {
-            margin-bottom: 10px;
-        }
-        .nav a {
-            color: #1a0dab;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .nav a:hover {
-            text-decoration: underline;
+        .buttons input:hover {
+            border: 1px solid #dadce0;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            color: #222;
         }
         .footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #555555;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .footer div {
+            margin: 0 15px;
+            font-size: 14px;
+            color: #5f6368;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <a href="#">Sobre Google</a>
-        <a href="#">Tienda</a>
-        <a href="#">España</a>
-        <a href="#">Publicidad</a>
-        <a href="#">Google</a>
-        <a href="#">al</a>
-        <a href="#">Buscar con Google</a>
-        <a href="#">Voy a tener suerte</a>
-        <span>Ofrecido por Google en: <a href="#">català</a> <a href="#">galego</a> <a href="#">euskara</a></span>
+    <div class="logo">
+        <img src="google-logo.png" alt="Google Logo"> <!-- Asegúrate de tener el logo de Google guardado como google-logo.png -->
     </div>
-    <div class="content">
-        <div class="nav">
-            <a href="#">Gmail</a>
-            <a href="#">Imágenes</a>
-        </div>
-        <div>
-            <h1>Empresa</h1>
-            <p>Cómo funciona la Búsqueda</p>
-            <p>Emisión neutra de carbono desde el 2007</p>
-            <p><a href="#">Privacidad</a> <a href="#">Términos</a> <a href="#">Configuración</a></p>
-        </div>
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Buscar en Google">
+    </div>
+    <div class="buttons">
+        <input type="button" value="Buscar con Google">
+        <input type="button" value="Voy a tener suerte">
     </div>
     <div class="footer">
-        <p>&copy; 2024 Google</p>
+        <div>Publicidad</div>
+        <div>Negocios</div>
+        <div>Acerca de</div>
+        <div>Cómo funciona la búsqueda</div>
     </div>
 </body>
 </html>

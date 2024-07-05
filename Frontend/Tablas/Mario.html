@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réplicas del Juego de Mario</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .game-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .mario-game {
+            width: 300px;
+            height: 400px;
+            background-color: #87CEEB;
+            border: 2px solid #000;
+            position: relative;
+            overflow: hidden;
+        }
+        .mario-game img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="mario-game">
+            <img src="mario_sprite.png" alt="Mario" width="50">
+        </div>
+        <div class="mario-game">
+            <img src="mario_sprite.png" alt="Mario" width="50">
+        </div>
+        <div class="mario-game">
+            <img src="mario_sprite.png" alt="Mario" width="50">
+        </div>
+    </div>
+</body>
+</html>
