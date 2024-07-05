@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
+    <title>Tarea 3 - Réplica de Netflix</title>
     <style>
         body {
             margin: 0;
@@ -11,21 +11,24 @@
             background-color: #141414;
             color: white;
         }
+        .header {
+            background-color: #800080;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
+            background-color: #141414;
         }
         .navbar img {
             height: 40px;
         }
         .navbar ul {
-            list-style-type: none;
+            list-style: none;
             display: flex;
             margin: 0;
             padding: 0;
@@ -34,88 +37,83 @@
             margin-left: 20px;
         }
         .navbar a {
-            color: white;
             text-decoration: none;
+            color: white;
         }
-        .header {
-            height: 80vh;
-            background-image: url('netflix-header.jpg'); /* Imagen de encabezado */
-            background-size: cover;
-            background-position: center;
+        .navbar .right-icons {
             display: flex;
-            justify-content: center;
             align-items: center;
-            text-align: center;
-            padding: 20px;
-            position: relative;
         }
-        .header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
+        .navbar .right-icons img {
+            height: 30px;
+            margin-left: 10px;
         }
-        .header-content {
-            position: relative;
-            z-index: 1;
-        }
-        .header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .header p {
-            font-size: 1.2em;
-        }
-        .movie-section {
+        .section {
             padding: 20px;
         }
-        .movie-section h2 {
+        .section h2 {
             margin: 20px 0;
         }
-        .movie-grid {
+        .movie-row {
             display: flex;
-            gap: 10px;
-            overflow-x: scroll;
-            padding-bottom: 20px;
+            overflow-x: auto;
         }
         .movie {
-            min-width: 150px;
-            height: 225px;
-            background-color: #333;
-            border-radius: 4px;
+            min-width: 200px;
+            height: 120px;
+            margin-right: 10px;
             background-size: cover;
             background-position: center;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>TAREA 3 - RÉPLICA DE NETFLIX</h1>
+    </div>
     <div class="navbar">
         <img src="netflix-logo.png" alt="Netflix Logo"> <!-- Asegúrate de tener el logo de Netflix guardado como netflix-logo.png -->
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Series</a></li>
+            <li><a href="#">Series TV</a></li>
             <li><a href="#">Películas</a></li>
-            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Novedades más vistas</a></li>
             <li><a href="#">Mi lista</a></li>
         </ul>
-    </div>
-    <div class="header">
-        <div class="header-content">
-            <h1>Título del Show</h1>
-            <p>Una breve descripción del show o película que aparece en el encabezado.</p>
+        <div class="right-icons">
+            <img src="search-icon.png" alt="Buscar"> <!-- Asegúrate de tener el icono de búsqueda guardado como search-icon.png -->
+            <img src="profile-icon.png" alt="Perfil"> <!-- Asegúrate de tener el icono de perfil guardado como profile-icon.png -->
         </div>
     </div>
-    <div class="movie-section">
-        <h2>Populares en Netflix</h2>
-        <div class="movie-grid">
-            <div class="movie" style="background-image: url('movie1.jpg');"></div>
-            <div class="movie" style="background-image: url('movie2.jpg');"></div>
-            <div class="movie" style="background-image: url('movie3.jpg');"></div>
-            <div class="movie" style="background-image: url('movie4.jpg');"></div>
-            <div class="movie" style="background-image: url('movie5.jpg');"></div>
+    <div class="section">
+        <h2>Documentales</h2>
+        <div class="movie-row">
+            <div class="movie" style="background-image: url('doc1.jpg');"></div> <!-- Asegúrate de tener la imagen doc1.jpg -->
+            <div class="movie" style="background-image: url('doc2.jpg');"></div> <!-- Asegúrate de tener la imagen doc2.jpg -->
+            <div class="movie" style="background-image: url('doc3.jpg');"></div> <!-- Asegúrate de tener la imagen doc3.jpg -->
+            <div class="movie" style="background-image: url('doc4.jpg');"></div> <!-- Asegúrate de tener la imagen doc4.jpg -->
+            <div class="movie" style="background-image: url('doc5.jpg');"></div> <!-- Asegúrate de tener la imagen doc5.jpg -->
+        </div>
+    </div>
+    <div class="section">
+        <h2>Volver a ver</h2>
+        <div class="movie-row">
+            <div class="movie" style="background-image: url('rewatch1.jpg');"></div> <!-- Asegúrate de tener la imagen rewatch1.jpg -->
+            <div class="movie" style="background-image: url('rewatch2.jpg');"></div> <!-- Asegúrate de tener la imagen rewatch2.jpg -->
+            <div class="movie" style="background-image: url('rewatch3.jpg');"></div> <!-- Asegúrate de tener la imagen rewatch3.jpg -->
+            <div class="movie" style="background-image: url('rewatch4.jpg');"></div> <!-- Asegúrate de tener la imagen rewatch4.jpg -->
+            <div class="movie" style="background-image: url('rewatch5.jpg');"></div> <!-- Asegúrate de tener la imagen rewatch5.jpg -->
+        </div>
+    </div>
+    <div class="section">
+        <h2>Series TV de EE UU para hacer un maratón</h2>
+        <div class="movie-row">
+            <div class="movie" style="background-image: url('series1.jpg');"></div> <!-- Asegúrate de tener la imagen series1.jpg -->
+            <div class="movie" style="background-image: url('series2.jpg');"></div> <!-- Asegúrate de tener la imagen series2.jpg -->
+            <div class="movie" style="background-image: url('series3.jpg');"></div> <!-- Asegúrate de tener la imagen series3.jpg -->
+            <div class="movie" style="background-image: url('series4.jpg');"></div> <!-- Asegúrate de tener la imagen series4.jpg -->
+            <div class="movie" style="background-image: url('series5.jpg');"></div> <!-- Asegúrate de tener la imagen series5.jpg -->
         </div>
     </div>
 </body>

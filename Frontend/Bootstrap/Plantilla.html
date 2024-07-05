@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla de página web con Bootstrap</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .jumbotron {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .jumbotron h1 {
+      font-size: 48px;
+    }
+
+    .jumbotron p {
+      font-size: 20px;
+    }
+
+    .nav-pills {
+      margin-bottom: 30px;
+    }
+
+    .nav-pills .nav-link {
+      background-color: #343a40;
+      color: #fff;
+      border-radius: 4px;
+      padding: 15px 20px;
+    }
+
+    .nav-pills .nav-link:hover {
+      background-color: #29323b;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .card-header {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .article .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .article .card-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .article .card-text {
+      font-size: 16px;
+    }
+
+    .article .read-more {
+      background-color: #343a40;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .article .read-more:hover {
+      background-color: #29323b;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h1>Plantilla de página web</h1>
+        <p>Crea una página web atractiva y fácil de usar con Bootstrap.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-pills nav-justified" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nosotros-tab" data-toggle="tab" href="#nosotros" role="tab" aria-controls="nosotros" aria-selected="false">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="servicios-tab" data-toggle="tab" href="#servicios" role="tab" aria-controls="servicios" aria-selected="false">Servicios</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-content mt-4">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="row">
+        <div class="col-md-4 article">
+          <div class="card">
+            <div class="card-header">Artículo 1</div>
+            <img class="card-img-top" src="articulo1.jpg" alt="Artículo 1">
+            <div class="card-body">
+              <h5 class="card-title">Título del Artículo 1</h5>
+              <p class="card-text">Descripción breve del Artículo 1.</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 article">
+          <div class="card">
+            <div class="card-header">Artículo 2</div>
+            <img class="card-img-top" src="articulo2.jpg" alt="Artículo 2">
+            <div class="card-body">
+              <h5 class="card-title">Título del Artículo 2</h5>
+              <p class="card-text">Descripción breve del Artículo 2.</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 article">
+          <div class="card">
+            <div class="card-header">Artículo 3</div>
+            <img class="card-img-top" src="articulo3.jpg" alt="Artículo 3">
+            <div class="card-body">
+              <h5 class="card-title">Título del Artículo 3</h5>
+              <p class="card-text">Descripción breve del Artículo 3.</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nosotros" role="tabpanel" aria-labelledby="nosotros-tab">
+      <h2>Sobre Nosotros</h2>
+      <p>Información sobre la empresa.</p>
+    </div>
+    <div class="tab-pane fade" id="servicios" role="tabpanel" aria-labelledby="servicios-tab">
+      <h2>Servicios</h2>
+      <p>Descripción de los servicios ofrecidos.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
