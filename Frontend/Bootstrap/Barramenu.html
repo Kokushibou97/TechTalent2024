@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-nav .dropdown-menu {
+            position: absolute;
+        }
+        .dropdown-menu .dropdown-menu {
+            margin-left: 100%;
+            margin-top: -30px;
+        }
+        .dropdown-menu .dropdown-menu .dropdown-menu {
+            margin-left: 100%;
+            margin-top: -30px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar .navbar-nav .nav-link:hover,
+        .navbar .navbar-nav .dropdown-menu a:hover {
+            color: #ddd !important;
+        }
+        .navbar-light .navbar-toggler {
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#"><img src="https://via.placeholder.com/100x30" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Watching new movies</a></li>
+                            <li><a class="dropdown-item" href="#">Listening music</a></li>
+                            <li><a class="dropdown-item" href="#">Play new games</a></li>
+                            <li><a class="dropdown-item" href="#">Learn new design</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Sub Item 01</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Sub Item 01</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Item 02</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Item 03</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Item 04</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Sub Item 05</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Sub Item 01</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Item 02</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Item 03</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Item 04</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Item 05</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Item 06</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sub Item 06</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mega</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-phone"></i> +84123 456 999</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-envelope"></i> name@gmail.com</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i> 123 street CH city</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user-plus"></i> Sign Up</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Dropdown submenu
+        $(document).ready(function () {
+            $('.dropdown-submenu a.dropdown-toggle').on("click", function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>
